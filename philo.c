@@ -2,25 +2,41 @@
 #include"philo.h"
 
 
-int init_philo(t_philo *p)
+int init_philo(t_philo *phi)
 {
-	p->nb_p = 4;
-	p->t_d = 10;
-	p->t_e = 1;
-	p->t_s = 1;
-	p->nb_e = 5;
-	p->tid = 0;
+	phi->nb_p = 4;
+	phi->t_d = 10;
+	phi->t_e = 1;
+	phi->t_s = 1;
+	phi->nb_e = 5;
 	return(0);
+}
+
+long long tv(void)
+{
+	struct timeval tv;
+
+	gettimeofday(&tv, NULL);
+	return (tv.tv_sec * 1000 + tv.tv_usec);
 }
 
 void *routine(void *arg)
 {
-	t_philo *p;
-	
-	p = (t_philo*)arg;
+	t_data *data;
+	t_philo *phi;
+	int id;
 
-	ft_dprintf(2,"routine\n");
-	ft_dprintf(2,"tid = %d\n", p->tid);
+	data = (t_data*)arg;
+	phi = data->phi;
+	id = data->id;
+	pthread_mutex_lock(&phi->id_m);
+	printf("%lld %d has taken a fork\n", tv(), id);
+	printf("%lld %d is eating\n", tv(), id);
+	printf("%lld %d is sleeping\n", tv(), id);
+	usleep(phi->t_s);
+	printf("%lld %d is thinking\n", tv(), id);
+
+	pthread_mutex_unlock(&phi->id_m);
 	return(NULL);
 }
 
@@ -30,25 +46,32 @@ int	creat_tread(t_philo *phi)
 	int i;
 	int mes;
 
+	pthread_mutex_init(&phi->id_m, NULL);
+
 	i = 0;
 	while (i < phi->nb_p)
 	{
-		phi->tid = i + 1;
-		mes = pthread_create(&thread[i], NULL, routine, phi);
-		printf("creat thread[%d] = %ld  mes = %d\n", i, thread[i], mes);
+		t_data *data;
+
+		data = malloc(sizeof(t_data));
+		data->phi = phi;
+		data->id = i + 1;
+
+		printf("creat thread[%d]\n", i + 1);
+		mes = pthread_create(&thread[i], NULL, routine, data);
+		printf("thread[%d] = %ld  mes = %d\n", i + 1, thread[i], mes);
 		i++;
 	}
 
 	i = 0;
 	while (i < phi->nb_p)
 	{
-		phi->tid = i + 1;
 		mes = pthread_join(thread[i], NULL);
-		printf("join thread[%d] = %ld  mes = %d\n", i, thread[i], mes);
+		printf("join thread[%d] = %ld  mes = %d\n", i + 1, thread[i], mes);
 		i++;
 	}
 
-	
+	pthread_mutex_destroy(&phi->id_m);
 
 	return(0);
 }
@@ -56,7 +79,8 @@ int	creat_tread(t_philo *phi)
 int main(int argc, char** argv)
 {
 	t_philo	*phi;
-	
+
+
 	(void)argv;
 	if (argc < 2)
 	{
@@ -69,7 +93,7 @@ int main(int argc, char** argv)
 		phi->nb_p = ft_atoi(argv[1]);
 //	printf("nb_p = %d, nb_e = %d, t_d = %d, t_e = %d, t_s = %d\n", p->nb_p, p->nb_e, p->t_d, p->t_e, p->t_s);
 	creat_tread(phi);
-	
+
 	sleep(1);
 
 	return (0);
