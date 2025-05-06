@@ -25,7 +25,7 @@ int	ft_atoi(const char *str)
 	return (s * a);
 }
 
-int ft_strlen(char *c)
+int	ft_strlen(char *c)
 {
 	int i;
 
@@ -37,4 +37,20 @@ int ft_strlen(char *c)
 		i++;
 	}
 	return(i);
+}
+
+long long	tv(void)
+{
+	struct timeval	tv;
+
+	gettimeofday(&tv, NULL);
+	return ((tv.tv_sec * 1000) + (tv.tv_usec / 1000));
+}
+
+int	printf_m(t_data *data, char *c)
+{
+	pthread_mutex_lock(&data->phi->gen_m);
+	printf("%lld P%d %s\n", tv(), data->id, c);
+	pthread_mutex_unlock(&data->phi->gen_m);
+	return(0);
 }

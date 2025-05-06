@@ -22,7 +22,10 @@ typedef struct s_philo
 	int				t_s;
 	int				nb_e;
 	long long		start_time;
+	int				*tab;
 	pthread_mutex_t	gen_m;
+	int				dead;
+	pthread_mutex_t	dead_m;
 }	t_philo;
 
 typedef struct s_data
@@ -32,24 +35,26 @@ typedef struct s_data
 	t_philo			*phi;
 	pthread_mutex_t	fork_m;
 	long long		s_e;
-	int				dead;
 }	t_data;
 
 //philo
 int		init_philo(t_philo *phi);
 void	*routine(void *arg);
 int		creat_tread(t_philo *phi);
+int		init_data(t_data *data, t_philo *phi, int i, t_data *data_tmp);
 //main
 
 //philo2
-int			p_sleep (t_data *data);
-int			p_think (t_data *data);
-int			p_eat (t_data *data);
-void		*P_die(void *arg);
-long long	tv(void);
+int		p_sleep (t_data *data);
+int		p_think (t_data *data);
+int		f_lock(t_data *data, pthread_mutex_t *f1, pthread_mutex_t *f2);
+int		p_eat (t_data *data);
+void	*P_die(void *arg);
 
 //lib1
-int	ft_atoi(const char *str);
-int ft_strlen(char *c);
+int			ft_atoi(const char *str);
+int			ft_strlen(char *c);
+long long	tv(void);
+int			printf_m(t_data *data, char *c);
 
 #endif
