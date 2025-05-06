@@ -1,0 +1,81 @@
+   thread[1] = 123145420460032   mes = 0
+   thread[2] = 123145421533184   mes = 0
+   thread[3] = 123145422606336   mes = 0
+   thread[4] = 123145423679488   mes = 0
+1746540653671 P3 has taken a fork f1
+1746540653671 P3 has taken a fork f2
+1746540653671 P3 is eating
+1746540653671 P2 has taken a fork f1
+1746540653671 P4 has taken a fork f1
+1746540653875 P3 is sleeping
+1746540653875 P4 has taken a fork f2
+1746540653875 P4 is eating
+1746540653875 P2 has taken a fork f2
+1746540653875 P2 is eating
+1746540653977 P3 is thinking
+1746540653981 P3 died
+1746540653981 P1 died
+1746540654075 P4 is sleeping
+1746540654075 P2 is sleeping
+1746540654175 P4 is thinking
+1746540654175 P4 has taken a fork f1
+1746540654175 P4 has taken a fork f2
+1746540654175 P4 is eating
+1746540654175 P2 is thinking
+1746540654175 P2 has taken a fork f1
+1746540654175 P2 has taken a fork f2
+1746540654175 P2 is eating
+1746540654375 P4 is sleeping
+1746540654375 P2 is sleeping
+1746540654475 P4 is thinking
+1746540654475 P4 has taken a fork f1
+1746540654475 P4 has taken a fork f2
+1746540654475 P4 is eating
+1746540654475 P2 is thinking
+1746540654475 P2 has taken a fork f1
+1746540654475 P2 has taken a fork f2
+1746540654475 P2 is eating
+1746540654675 P4 is sleeping
+1746540654675 P2 is sleeping
+1746540654775 P4 is thinking
+1746540654775 P4 has taken a fork f1
+1746540654775 P4 has taken a fork f2
+1746540654775 P4 is eating
+1746540654775 P2 is thinking
+1746540654775 P2 has taken a fork f1
+1746540654775 P2 has taken a fork f2
+1746540654775 P2 is eating
+1746540654975 P2 is sleeping
+1746540654976 P4 is sleeping
+1746540655075 P2 is thinking
+1746540655075 P2 has taken a fork f1
+1746540655075 P2 has taken a fork f2
+1746540655075 P2 is eating
+1746540655076 P4 is thinking
+1746540655076 P4 has taken a fork f1
+1746540655076 P4 has taken a fork f2
+1746540655076 P4 is eating
+1746540655275 P2 is sleeping
+1746540655276 P4 is sleeping
+1746540655375 P2 is thinking
+1746540655375 P2 has taken a fork f1
+1746540655375 P2 has taken a fork f2
+1746540655375 P2 is eating
+1746540655376 P4 is thinking
+1746540655376 P4 has taken a fork f1
+1746540655376 P4 has taken a fork f2
+1746540655376 P4 is eating
+1746540655576 P2 is sleeping
+1746540655576 P4 is sleeping
+1746540655676 P2 is thinking
+1746540655676 P2 has taken a fork f1
+1746540655676 P2 has taken a fork f2
+1746540655676 P2 is eating
+1746540655676 P4 is thinking
+1746540655676 P4 has taken a fork f1
+1746540655676 P4 has taken a fork f2
+1746540655676 P4 is eating
+1746540655876 P2 is sleeping
+1746540655876 P4 is sleeping
+1746540655976 P2 is thinking
+1746540655976 P4 is thinking

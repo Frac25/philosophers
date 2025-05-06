@@ -1,6 +1,7 @@
 NAME = philo
 
 PROG =	philo\
+		philo2\
 		ft_dprintf\
 		ft_dprintnb\
 		lib1\

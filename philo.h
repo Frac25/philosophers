@@ -16,20 +16,37 @@
 
 typedef struct s_philo
 {
-	int	nb_p;
-	int	t_d;
-	int	t_e;
-	int	t_s;
-	int	nb_e;
-	pthread_mutex_t id_m;
+	int				nb_p;
+	int				t_d;
+	int				t_e;
+	int				t_s;
+	int				nb_e;
+	long long		start_time;
+	pthread_mutex_t	gen_m;
 }	t_philo;
 
 typedef struct s_data
 {
-	int id;
-	t_philo *phi;
+	struct s_data	*next;
+	int				id;
+	t_philo			*phi;
+	pthread_mutex_t	fork_m;
+	long long		s_e;
+	int				dead;
 }	t_data;
 
+//philo
+int		init_philo(t_philo *phi);
+void	*routine(void *arg);
+int		creat_tread(t_philo *phi);
+//main
+
+//philo2
+int			p_sleep (t_data *data);
+int			p_think (t_data *data);
+int			p_eat (t_data *data);
+void		*P_die(void *arg);
+long long	tv(void);
 
 //lib1
 int	ft_atoi(const char *str);
