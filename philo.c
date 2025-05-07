@@ -3,14 +3,14 @@
 
 int	init_philo(t_philo *phi)
 {
-	phi->nb_p = 4;
-	phi->t_d = 310;
+	phi->nb_p = 5;
+	phi->t_d = 800;
 	phi->t_e = 200;
-	phi->t_s = 100;
+	phi->t_s = 200;
 	phi->nb_e = 7;
 	phi->dead = 0;
 	phi->g_tic = 0;
-	phi->queue = 0;
+	phi->tic_m = 0;
 	return(0);
 }
 
@@ -21,6 +21,7 @@ int	init_data(t_data *data, t_philo *phi, int i, t_data *data_tmp)
 	data->fork = 0;
 	data->next = data_tmp;
 	data->s_e = phi->start_time;
+	data->sta = 0;
 
 	return(0);
 }
@@ -29,12 +30,10 @@ void	*routine(void *arg)
 {
 	t_data	*data;
 	t_philo	*phi;
-	int		id;
 	int		n;
 
 	data = (t_data*)arg;
 	phi = data->phi;
-	id = data->id;
 
 	while(tv() < phi->start_time)
 		usleep(1);
@@ -57,10 +56,10 @@ int	creat_tread(t_philo *phi)
 {
 	pthread_t	thread[phi->nb_p];
 	pthread_t	thread_d[phi->nb_p];
+	pthread_t	thread_t;
 	t_data		*data_tmp;
 	t_data		*data_tmp1;
 	int			i;
-	int			mes;
 
 	pthread_mutex_init(&phi->gen_m, NULL);
 	pthread_mutex_init(&phi->dead_m, NULL);
@@ -74,11 +73,13 @@ int	creat_tread(t_philo *phi)
 		data = malloc(sizeof(t_data));
 		init_data(data, phi, i, data_tmp);
 		if (i == 0)
+		{
 			data_tmp1 = data;
+			pthread_create(&thread_t, NULL, tic, data);
+		}
 		data_tmp = data;
 		pthread_mutex_init(&data->fork_m, NULL);
-		mes = pthread_create(&thread[i], NULL, routine, data);
-//		printf("   thread[%d] = %ld   mes = %d\n", i + 1, (long)thread[i], mes);
+		pthread_create(&thread[i], NULL, routine, data);
 		pthread_create(&thread_d[i], NULL, P_die, data);
 		i++;
 	}
@@ -87,8 +88,8 @@ int	creat_tread(t_philo *phi)
 	i = 0;
 	while (i < phi->nb_p)
 	{
-		mes = pthread_join(thread[i], NULL);
-		mes = pthread_join(thread_d[i], NULL);
+		pthread_join(thread[i], NULL);
+		pthread_join(thread_d[i], NULL);
 		i++;
 	}
 

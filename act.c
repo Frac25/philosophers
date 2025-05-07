@@ -3,10 +3,8 @@
 int	p_sleep (t_data *data)
 {
 	t_philo	*phi;
-	int		id;
 
 	phi = data->phi;
-	id = data->id;
 	if(data->phi->dead == 1)
 		return(-1);
 	printf_m(data, "is sleeping");
@@ -16,26 +14,19 @@ int	p_sleep (t_data *data)
 
 int	p_think (t_data *data)
 {
-	t_philo	*phi;
-	int		id;
-
-	phi = data->phi;
-	id = data->id;
 	if(data->phi->dead == 1)
 		return(-1);
 	printf_m(data, "is thinking");
 	return (0);
 }
 
-
-
 int	p_eat (t_data *data)
 {
 	t_philo	*phi;
-	int		id;
+//	int		id;
 
 	phi = data->phi;
-	id = data->id;
+//	id = data->id;
 //	if(id == phi->nb_p)
 //	{
 		if (f_lock_w(data, data->next) == -1)
