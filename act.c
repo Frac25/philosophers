@@ -27,25 +27,7 @@ int	p_think (t_data *data)
 	return (0);
 }
 
-int	f_lock(t_data *data, pthread_mutex_t *f1, pthread_mutex_t *f2)
-{
-	pthread_mutex_lock(f1);
-	if(data->phi->dead == 1)
-	{
-		pthread_mutex_unlock(f1);
-		return(-1);
-	}
-	printf_m(data, "has taken a fork");
-	pthread_mutex_lock(f2);
-	if(data->phi->dead == 1)
-	{
-		pthread_mutex_unlock(f1);
-		pthread_mutex_unlock(f2);
-		return(-1);
-	}
-	printf_m(data, "has taken a fork");
-	return (0);
-}
+
 
 int	p_eat (t_data *data)
 {
@@ -54,21 +36,20 @@ int	p_eat (t_data *data)
 
 	phi = data->phi;
 	id = data->id;
-	if(id == phi->nb_p)
-	{
-		if (f_lock(data, &data->fork_m, &data->next->fork_m) == -1)
+//	if(id == phi->nb_p)
+//	{
+		if (f_lock_w(data, data->next) == -1)
 			return (-1);
-	}
-	else
-	{
-		if (f_lock(data, &data->next->fork_m, &data->fork_m) == -1)
-			return (-1);
-	}
+//	}
+//	else
+//	{
+//		if (f_lock_w(data->next, data) == -1)
+//			return (-1);
+//	}
 	data->s_e = tv();
 	printf_m(data, "is eating");
 	usleep(phi->t_e * 1000);
-	pthread_mutex_unlock(&data->fork_m);
-	pthread_mutex_unlock(&data->next->fork_m);
+	f_unlock(data);
 	return (0);
 }
 
@@ -86,7 +67,7 @@ void	*P_die(void *arg)
 			data->phi->dead = 1;
 		}
 		pthread_mutex_unlock(&data->phi->dead_m);
-		usleep(1);
+		usleep(10);
 	}
 	return (NULL);
 }

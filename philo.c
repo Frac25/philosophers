@@ -3,11 +3,14 @@
 
 int	init_philo(t_philo *phi)
 {
-	phi->nb_p = 5;
-	phi->t_d = 800;
+	phi->nb_p = 4;
+	phi->t_d = 310;
 	phi->t_e = 200;
-	phi->t_s = 200;
+	phi->t_s = 100;
 	phi->nb_e = 7;
+	phi->dead = 0;
+	phi->g_tic = 0;
+	phi->queue = 0;
 	return(0);
 }
 
@@ -15,9 +18,10 @@ int	init_data(t_data *data, t_philo *phi, int i, t_data *data_tmp)
 {
 	data->phi = phi;
 	data->id = i + 1;
+	data->fork = 0;
 	data->next = data_tmp;
 	data->s_e = phi->start_time;
-	data->phi->dead = 0;
+
 	return(0);
 }
 
@@ -60,6 +64,7 @@ int	creat_tread(t_philo *phi)
 
 	pthread_mutex_init(&phi->gen_m, NULL);
 	pthread_mutex_init(&phi->dead_m, NULL);
+	pthread_mutex_init(&phi->look_m, NULL);
 	data_tmp = NULL;
 	phi->start_time = tv() + 10;
 	i = 0;
@@ -89,6 +94,7 @@ int	creat_tread(t_philo *phi)
 
 	pthread_mutex_destroy(&phi->gen_m);
 	pthread_mutex_destroy(&phi->dead_m);
+	pthread_mutex_destroy(&phi->look_m);
 //	pthread_mutex_destroy(&&data->fork_m); a checker
 	return(0);
 }
