@@ -5,8 +5,6 @@ int	p_sleep (t_data *data)
 	t_philo	*phi;
 
 	phi = data->phi;
-	if(data->phi->dead == 1)
-		return(-1);
 	printf_m(data, "is sleeping");
 	usleep(phi->t_s * 1000);
 	return (0);
@@ -14,32 +12,17 @@ int	p_sleep (t_data *data)
 
 int	p_think (t_data *data)
 {
-	if(data->phi->dead == 1)
-		return(-1);
 	printf_m(data, "is thinking");
 	return (0);
 }
 
 int	p_eat (t_data *data)
 {
-	t_philo	*phi;
-//	int		id;
-
-	phi = data->phi;
-//	id = data->id;
-//	if(id == phi->nb_p)
-//	{
-		if (f_lock_w(data, data->next) == -1)
-			return (-1);
-//	}
-//	else
-//	{
-//		if (f_lock_w(data->next, data) == -1)
-//			return (-1);
-//	}
+	if (f_lock_w(data) == -1)
+		return (-1);
 	data->s_e = tv();
 	printf_m(data, "is eating");
-	usleep(phi->t_e * 1000);
+	usleep(data->phi->t_e * 1000);
 	f_unlock(data);
 	return (0);
 }
@@ -56,6 +39,7 @@ void	*P_die(void *arg)
 		{
 			printf_m(data, "died");
 			data->phi->dead = 1;
+			exit(EXIT_SUCCESS);
 		}
 		pthread_mutex_unlock(&data->phi->dead_m);
 		usleep(10);

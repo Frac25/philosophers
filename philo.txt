@@ -1,0 +1,13 @@
+1746689594314 P3 has taken a fork
+1746689594314 P3 has taken a fork
+1746689594314 P3 is eating
+1746689594514 P3 is sleeping
+1746689594514 P2 has taken a fork
+1746689594514 P2 has taken a fork
+1746689594514 P2 is eating
+1746689594714 P3 is thinking
+1746689594714 P2 is sleeping
+1746689594715 P1 has taken a fork
+1746689594715 P1 has taken a fork
+1746689594715 P1 is eating
+1746689594724 P3 died
