@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <pthread.h>
 
-void *routine(void *arg)
+void *p_live(void *arg)
 {
     printf("Hello from thread %d\n", *(int *)arg);
     return NULL;
@@ -16,7 +16,7 @@ int main()
     for (int i = 0; i < 5; i++)
     {
         ids[i] = i;
-        if (pthread_create(&threads[i], NULL, routine, &ids[i]) != 0)
+        if (pthread_create(&threads[i], NULL, p_live, &ids[i]) != 0)
         {
             perror("Failed to create thread");
         }

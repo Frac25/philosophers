@@ -2,9 +2,7 @@ NAME = philo
 
 PROG =	philo\
 		act\
-		fork\
-		ft_dprintf\
-		ft_dprintnb\
+		lock\
 		lib1\
 
 OBJ_DIR = obj
@@ -16,8 +14,8 @@ OBJ = $(addprefix $(OBJ_DIR)/, $(addsuffix .o, $(PROG)))
 CC = cc
 
 #CFLAGS =  -Wall -Wextra -Werror
-#CFLAGS =  -Wall -Wextra -fsanitize=thread -g
-CFLAGS =  -Wall -Wextra
+CFLAGS =  -Wall -Wextra -fsanitize=thread -g
+#CFLAGS =  -Wall -Wextra
 
 all:			$(OBJ_DIR) $(NAME)
 

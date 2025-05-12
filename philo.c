@@ -6,7 +6,7 @@ int	init_philo(t_philo *phi)
 	phi->t_d = 410;
 	phi->t_e = 200;
 	phi->t_s = 200;
-	phi->nb_e = 50;
+	phi->nb_e = 10;
 	phi->dead = 0;
 	phi->g_tic = 1;
 	phi->tic_min = 0;
@@ -23,42 +23,44 @@ int	init_data(t_data *data, t_philo *phi, int i, t_data *data_tmp)
 	return(0);
 }
 
-void	*routine(void *arg)
+void	*p_live(void *arg)
 {
 	t_data	*data;
-	t_philo	*phi;
 	int		n;
 
 	data = (t_data*)arg;
-	phi = data->phi;
-
-	while(tv() < phi->start_time)
-		usleep(1);
+	while(tv() < data->phi->start_time)
+		usleep(10);
+	if (data->id%2 != 0)
+		usleep(1000);
 	n = 0;
-	while (data->phi->dead == 0 && n < data->phi->nb_e)
+	while (n < data->phi->nb_e )
 	{
-		if(p_eat(data) == -1)
-			break;
-		if(p_sleep(data) == -1)
-			break;
-		if(p_think(data) == -1)
-			break;
+		if (p_eat(data) == -1)
+		{
+//			printf("LIVE11\n");
+			return(NULL);
+		}
+		p_sleep(data);
+//		printf("LIVE12\n");
+		p_think(data);
+//		printf("LIVE13\n");
 		n++;
 	}
-	data->phi->dead = 1;//checker
+//	printf("LIVE2\n");
 	return (NULL);
 }
 
 int	creat_tread(t_philo *phi)
 {
-	pthread_t	thread[phi->nb_p];
+	pthread_t	thread_l[phi->nb_p];
 	pthread_t	thread_d[phi->nb_p];
 	pthread_t	thread_t;
 	t_data		*data_tmp;
 	t_data		*data_tmp1;
 	int			i;
 
-	pthread_mutex_init(&phi->gen_m, NULL);
+//	pthread_mutex_init(&phi->write, NULL);
 	pthread_mutex_init(&phi->dead_m, NULL);
 	pthread_mutex_init(&phi->look_m, NULL);
 	data_tmp = NULL;
@@ -72,12 +74,12 @@ int	creat_tread(t_philo *phi)
 		if (i == 0)
 		{
 			data_tmp1 = data;
-			pthread_create(&thread_t, NULL, tic, data);
+			pthread_create(&thread_t, NULL, ticket, data);
 		}
 		data_tmp = data;
 		pthread_mutex_init(&data->fork_m, NULL);
-		pthread_create(&thread[i], NULL, routine, data);
-		pthread_create(&thread_d[i], NULL, P_die, data);
+		pthread_create(&thread_l[i], NULL, p_live, data);
+		pthread_create(&thread_d[i], NULL, p_die, data);
 		i++;
 	}
 	data_tmp1->next = data_tmp;
@@ -85,16 +87,41 @@ int	creat_tread(t_philo *phi)
 	i = 0;
 	while (i < phi->nb_p)
 	{
-		pthread_join(thread[i], NULL);
+//		printf("F1\n");
+		pthread_join(thread_l[i], NULL);
+		i++;
+	}
+	i = 0;
+	while (i < phi->nb_p)
+	{
+//		printf("F2\n");
 		pthread_join(thread_d[i], NULL);
 		i++;
 	}
+//	printf("F3\n");
 	pthread_join(thread_t, NULL);
-
-	pthread_mutex_destroy(&phi->gen_m);
+//	printf("F4\n");
 	pthread_mutex_destroy(&phi->dead_m);
 	pthread_mutex_destroy(&phi->look_m);
-	//pthread_mutex_destroy(&data->fork_m); //a faire pour chaque fork
+	data_tmp = data_tmp1;
+	i = 0;
+	while (i < phi->nb_p)
+	{
+//		printf("F5\n");
+		pthread_mutex_destroy(&data_tmp->fork_m);
+		data_tmp = data_tmp->next;
+		i++;
+	}
+	data_tmp = data_tmp1;
+	i = 0;
+	while (i < phi->nb_p)
+	{
+//		printf("F6\n");
+		data_tmp1 = data_tmp->next;
+		free(data_tmp);
+		data_tmp = data_tmp1;
+		i++;
+	}
 	return(0);
 }
 
@@ -103,26 +130,27 @@ int main(int argc, char** argv)
 	t_philo	*phi;
 
 	(void)argv;
-	if (argc < 2)
+	if (argc < 1 || argc > 6)
 	{
-		ft_dprintf(1, "argc KO\n");
+		printf("nb arg KO\n");
 		return(-1);
 	}
 	phi = malloc(sizeof(t_philo));
 	init_philo(phi);
-//	if(argc == 2)
-//		phi->nb_p = ft_atoi(argv[1]);
-//	printf("nb_p = %d, nb_e = %d, t_d = %d, t_e = %d, t_s = %d\n", p->nb_p, p->nb_e, p->t_d, p->t_e, p->t_s);
-
+	if(argc >= 2)
+		phi->nb_p = ft_atoi(argv[1]);
+	if(argc >= 3)
+		phi->t_d = ft_atoi(argv[2]);
+	if(argc >= 4)
+		phi->t_e = ft_atoi(argv[3]);
+	if(argc >= 5)
+		phi->t_s = ft_atoi(argv[4]);
+	if(argc >= 6)
+		phi->nb_e = ft_atoi(argv[5]);
+	printf("nb_p = %d, td = %d te = %d ts= %d nb_e = %d\n", phi->nb_p, phi->t_d, phi->t_e, phi->t_s, phi->nb_e);
 	creat_tread(phi);
+	free(phi);
 	return (0);
 }
 
 
-/*
-	while(1)
-	{
-		printf("tv = %lld\n", tv());
-		usleep(1000);
-	}
-*/

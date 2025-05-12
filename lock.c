@@ -1,6 +1,6 @@
 #include"philo.h"
 
-int	ticmin (t_data *data)
+int	ticket_min (t_data *data)
 {
 	int	i;
 	t_data *data_tmp;
@@ -8,7 +8,7 @@ int	ticmin (t_data *data)
 
 	pthread_mutex_lock(&data->phi->look_m);
 	data_tmp = data;
-	tic_min = 1000;
+	tic_min = 1000000;
 	i = 0;
 	while (i < data->phi->nb_p)
 	{
@@ -23,7 +23,7 @@ int	ticmin (t_data *data)
 	return (0);
 }
 
-void	*tic(void *arg)
+void	*ticket(void *arg)
 {
 	t_data	*data;
 	t_philo	*phi;
@@ -32,33 +32,35 @@ void	*tic(void *arg)
 	phi = data->phi;
 
 	while(tv() < phi->start_time)
-	usleep(1);
+		usleep(10);
 
-	while (data->phi->dead == 0)
+	while (1)
 	{
-		ticmin(data);
-		usleep(1000);
+		if (check_dead(data) == -1)
+		{
+//			printf("t1\n");
+			return(NULL);
+		}
+		ticket_min(data);
+		usleep(10);
 	}
-	data->phi->dead = 1;
 	return (NULL);
 }
 
 int	f_unlock(t_data *data)
 {
 	pthread_mutex_lock(&data->phi->look_m);
-	pthread_mutex_unlock(&data->fork_m);
-	pthread_mutex_unlock(&data->next->fork_m);
 	data->fork = 0;
 	data->next->fork = 0;
+	pthread_mutex_unlock(&data->fork_m);
+	pthread_mutex_unlock(&data->next->fork_m);
 	pthread_mutex_unlock(&data->phi->look_m);
 	return(0);
 }
 
 int	f_lock(t_data *data)
 {
-
 	pthread_mutex_lock(&data->phi->look_m);
-
 	if(data->fork + data->next->fork > 0)
 	{
 		pthread_mutex_unlock(&data->phi->look_m);
@@ -69,7 +71,6 @@ int	f_lock(t_data *data)
 		pthread_mutex_unlock(&data->phi->look_m);
 		return (1);
 	}
-
 	pthread_mutex_lock(&data->fork_m);
 	data->fork = 1;
 	printf_m(data, "has taken a fork");
@@ -80,21 +81,24 @@ int	f_lock(t_data *data)
 	pthread_mutex_unlock(&data->phi->look_m);
 	return (0);
 }
+
 int	f_lock_w(t_data *data)
 {
-	int	i;
-
 	pthread_mutex_lock(&data->phi->look_m);
 	data->tic = data->phi->g_tic;
 	data->phi->g_tic++;
-//	printf("lock W   P%d   tic = %d\n", data->id, data->tic);
+//	printf("lock W %lld   P%d   tic = %d\n", tv(), data->id, data->tic);
 	pthread_mutex_unlock(&data->phi->look_m);
-	i = 1;
-	while(i == 1)
+
+	while (1)
 	{
-		i = f_lock(data);
-		if (i == -1)
-			return (-1);
+		if (check_dead(data) == -1)
+		{
+//			printf("L1\n");
+			return(-1);
+		}
+		if(f_lock(data) == 0)
+			return(0);
 		usleep(100);
 	}
 	return (0);

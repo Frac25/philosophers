@@ -9,8 +9,6 @@
 #include<pthread.h>
 #include<sys/time.h>
 
-#include"ft_dprintf.h"
-
 typedef struct s_philo
 {
 	int				nb_p;
@@ -20,7 +18,7 @@ typedef struct s_philo
 	int				nb_e;
 	long long		start_time;
 	int				*tab;
-	pthread_mutex_t	gen_m;
+//	pthread_mutex_t	write;
 	int				dead;
 	pthread_mutex_t	dead_m;
 	pthread_mutex_t	look_m;
@@ -41,7 +39,7 @@ typedef struct s_data
 
 //philo
 int			init_philo(t_philo *phi);
-void		*routine(void *arg);
+void		*p_live(void *arg);
 int			creat_tread(t_philo *phi);
 int			init_data(t_data *data, t_philo *phi, int i, t_data *data_tmp);
 //main
@@ -50,19 +48,20 @@ int			init_data(t_data *data, t_philo *phi, int i, t_data *data_tmp);
 int			p_sleep (t_data *data);
 int			p_think (t_data *data);
 int			p_eat (t_data *data);
-void		*P_die(void *arg);
+void		*p_die(void *arg);
 
 //lock
 int			f_unlock(t_data *data);
 int			f_lock(t_data *data);
 int			f_lock_w(t_data *data);
-void		*tic(void *arg);
-int			ticmin (t_data *data);
+void		*ticket(void *arg);
+int			ticket_min (t_data *data);
 
 //lib1
 int			ft_atoi(const char *str);
 int			ft_strlen(char *c);
 long long	tv(void);
 int			printf_m(t_data *data, char *c);
+int			check_dead(t_data *data);
 
 #endif

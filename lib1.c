@@ -49,14 +49,25 @@ long long	tv(void)
 
 int	printf_m(t_data *data, char *c)
 {
-
-	pthread_mutex_lock(&data->phi->gen_m);
+//	pthread_mutex_lock(&data->phi->dead_m);
 	if(data->phi->dead == 1)
 	{
-		pthread_mutex_unlock(&data->phi->gen_m);
+//		pthread_mutex_unlock(&data->phi->dead_m);
 		return(-1);
 	}
-	printf("%lld P%d %s\n", tv(), data->id, c);
-	pthread_mutex_unlock(&data->phi->gen_m);
+	printf("print %lld P%d %s\n", tv(), data->id, c);
+//	pthread_mutex_unlock(&data->phi->dead_m);
+	return(0);
+}
+
+int	check_dead(t_data *data)
+{
+	pthread_mutex_lock(&data->phi->dead_m);
+	if(data->phi->dead == 1)
+	{
+		pthread_mutex_unlock(&data->phi->dead_m);
+		return (-1);
+	}
+	pthread_mutex_unlock(&data->phi->dead_m);
 	return(0);
 }
