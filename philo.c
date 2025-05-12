@@ -20,6 +20,8 @@ int	init_data(t_data *data, t_philo *phi, int i, t_data *data_tmp)
 	data->fork = 0;
 	data->next = data_tmp;
 	data->s_e = phi->start_time;
+	data->tic = 0;
+	data->sta = 0;
 	return(0);
 }
 
@@ -38,16 +40,15 @@ void	*p_live(void *arg)
 	{
 		if (p_eat(data) == -1)
 		{
-//			printf("LIVE11\n");
 			return(NULL);
 		}
 		p_sleep(data);
-//		printf("LIVE12\n");
 		p_think(data);
-//		printf("LIVE13\n");
 		n++;
 	}
-//	printf("LIVE2\n");
+//	pthread_mutex_lock(&data->phi->dead_m);
+//	data->sta = 1;
+//	pthread_mutex_unlock(&data->phi->dead_m);
 	return (NULL);
 }
 
@@ -60,22 +61,19 @@ int	creat_tread(t_philo *phi)
 	t_data		*data_tmp1;
 	int			i;
 
-//	pthread_mutex_init(&phi->write, NULL);
 	pthread_mutex_init(&phi->dead_m, NULL);
 	pthread_mutex_init(&phi->look_m, NULL);
 	data_tmp = NULL;
 	phi->start_time = tv() + 10;
 	i = 0;
+	pthread_mutex_lock(&phi->look_m);
 	while (i < phi->nb_p)
 	{
 		t_data *data;
 		data = malloc(sizeof(t_data));
 		init_data(data, phi, i, data_tmp);
 		if (i == 0)
-		{
 			data_tmp1 = data;
-			pthread_create(&thread_t, NULL, ticket, data);
-		}
 		data_tmp = data;
 		pthread_mutex_init(&data->fork_m, NULL);
 		pthread_create(&thread_l[i], NULL, p_live, data);
@@ -83,7 +81,8 @@ int	creat_tread(t_philo *phi)
 		i++;
 	}
 	data_tmp1->next = data_tmp;
-
+	pthread_create(&thread_t, NULL, ticket, data_tmp1);
+	pthread_mutex_unlock(&phi->look_m);
 	i = 0;
 	while (i < phi->nb_p)
 	{

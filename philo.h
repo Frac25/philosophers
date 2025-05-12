@@ -35,6 +35,7 @@ typedef struct s_data
 	pthread_mutex_t	fork_m;
 	int				tic;
 	long long		s_e;
+	int				sta;
 }	t_data;
 
 //philo

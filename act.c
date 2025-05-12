@@ -18,7 +18,9 @@ int	p_eat (t_data *data)
 {
 	if (f_lock_w(data) == -1)
 		return (-1);
+	pthread_mutex_lock(&data->phi->dead_m);
 	data->s_e = tv();
+	pthread_mutex_unlock(&data->phi->dead_m);
 	printf_m(data, "is eating");
 	usleep(data->phi->t_e * 1000);
 	f_unlock(data);
@@ -33,15 +35,14 @@ void	*p_die(void *arg)
 	while (1)
 	{
 		pthread_mutex_lock(&data->phi->dead_m);
-		if(data->phi->dead == 1)
+		if(data->phi->dead == 1 || data->sta == 1)
 		{
 			pthread_mutex_unlock(&data->phi->dead_m);
-//			printf("D1\n");
 			return(NULL);
 		}
 		if(tv() - data->s_e >= data->phi->t_d)
 		{
-			printf_m(data, "died");
+			printf("print %lld P%d %s\n", tv(), data->id, "died");
 			data->phi->dead = 1;
 			pthread_mutex_unlock(&data->phi->dead_m);
 			return(NULL);
@@ -49,7 +50,6 @@ void	*p_die(void *arg)
 		pthread_mutex_unlock(&data->phi->dead_m);
 		usleep(100);
 	}
-//	printf("D2\n");
 	return (NULL);
 }
 
