@@ -60,6 +60,14 @@ int	printf_m(t_data *data, char *c)
 	return(0);
 }
 
+int	printf_l(t_data *data, char *c)
+{
+	pthread_mutex_lock(&data->phi->look_m);
+	printf("print %lld P%d %s\n", tv(), data->id, c);
+	pthread_mutex_unlock(&data->phi->look_m);
+	return(0);
+}
+
 int	check_dead(t_data *data)
 {
 	pthread_mutex_lock(&data->phi->dead_m);
@@ -70,4 +78,13 @@ int	check_dead(t_data *data)
 	}
 	pthread_mutex_unlock(&data->phi->dead_m);
 	return(0);
+}
+
+int	gp(int n)
+{
+	if(n == 1)
+		return (1);
+	else if (n % 2 == 0)
+		return(2);
+	return (3);
 }

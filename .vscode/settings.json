@@ -5,6 +5,7 @@
 		"string": "c",
 		"string_view": "c",
 		"vector": "c",
-		"philo.h": "c"
+		"philo.h": "c",
+		"__locale": "c"
 	}
 }

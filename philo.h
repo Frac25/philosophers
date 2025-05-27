@@ -17,13 +17,9 @@ typedef struct s_philo
 	int				t_s;
 	int				nb_e;
 	long long		start_time;
-	int				*tab;
-//	pthread_mutex_t	write;
 	int				dead;
 	pthread_mutex_t	dead_m;
 	pthread_mutex_t	look_m;
-	int				g_tic;
-	int				tic_min;
 }	t_philo;
 
 typedef struct s_data
@@ -33,9 +29,8 @@ typedef struct s_data
 	t_philo			*phi;
 	int				fork;
 	pthread_mutex_t	fork_m;
-	int				tic;
-	long long		s_e;
-	int				sta;
+	long long		start_eat;
+	int				count_eat;
 }	t_data;
 
 //philo
@@ -55,14 +50,14 @@ void		*p_die(void *arg);
 int			f_unlock(t_data *data);
 int			f_lock(t_data *data);
 int			f_lock_w(t_data *data);
-void		*ticket(void *arg);
-int			ticket_min (t_data *data);
 
 //lib1
 int			ft_atoi(const char *str);
 int			ft_strlen(char *c);
 long long	tv(void);
 int			printf_m(t_data *data, char *c);
+int			printf_l(t_data *data, char *c);
 int			check_dead(t_data *data);
+int			gp(int n);
 
 #endif

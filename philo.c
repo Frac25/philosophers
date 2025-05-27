@@ -8,8 +8,6 @@ int	init_philo(t_philo *phi)
 	phi->t_s = 200;
 	phi->nb_e = 10;
 	phi->dead = 0;
-	phi->g_tic = 1;
-	phi->tic_min = 0;
 	return(0);
 }
 
@@ -19,44 +17,43 @@ int	init_data(t_data *data, t_philo *phi, int i, t_data *data_tmp)
 	data->id = i + 1;
 	data->fork = 0;
 	data->next = data_tmp;
-	data->s_e = phi->start_time;
-	data->tic = 0;
-	data->sta = 0;
+	data->start_eat = phi->start_time;
+	data->count_eat = 0;
 	return(0);
 }
 
 void	*p_live(void *arg)
 {
 	t_data	*data;
-	int		n;
 
 	data = (t_data*)arg;
+	pthread_mutex_lock(&data->phi->look_m);
+	pthread_mutex_unlock(&data->phi->look_m);
 	while(tv() < data->phi->start_time)
-		usleep(10);
-	if (data->id%2 != 0)
-		usleep(1000);
-	n = 0;
-	while (n < data->phi->nb_e )
+		usleep(100);
+	if(data->id % 2 == 0)
+		usleep(500);
+	while (1)
 	{
-		if (p_eat(data) == -1)
-		{
-			return(NULL);
-		}
+		p_eat(data);
 		p_sleep(data);
 		p_think(data);
-		n++;
+		pthread_mutex_lock(&data->phi->dead_m);
+		if(data->phi->dead == 1)
+		{
+			pthread_mutex_unlock(&data->phi->dead_m);
+			return(NULL);
+		}
+		pthread_mutex_unlock(&data->phi->dead_m);
+
 	}
-//	pthread_mutex_lock(&data->phi->dead_m);
-//	data->sta = 1;
-//	pthread_mutex_unlock(&data->phi->dead_m);
 	return (NULL);
 }
 
 int	creat_tread(t_philo *phi)
 {
 	pthread_t	thread_l[phi->nb_p];
-	pthread_t	thread_d[phi->nb_p];
-	pthread_t	thread_t;
+	pthread_t	thread_d;
 	t_data		*data_tmp;
 	t_data		*data_tmp1;
 	int			i;
@@ -64,7 +61,7 @@ int	creat_tread(t_philo *phi)
 	pthread_mutex_init(&phi->dead_m, NULL);
 	pthread_mutex_init(&phi->look_m, NULL);
 	data_tmp = NULL;
-	phi->start_time = tv() + 10;
+	phi->start_time = tv() + 500;
 	i = 0;
 	pthread_mutex_lock(&phi->look_m);
 	while (i < phi->nb_p)
@@ -77,11 +74,10 @@ int	creat_tread(t_philo *phi)
 		data_tmp = data;
 		pthread_mutex_init(&data->fork_m, NULL);
 		pthread_create(&thread_l[i], NULL, p_live, data);
-		pthread_create(&thread_d[i], NULL, p_die, data);
 		i++;
 	}
 	data_tmp1->next = data_tmp;
-	pthread_create(&thread_t, NULL, ticket, data_tmp1);
+	pthread_create(&thread_d, NULL, p_die, data_tmp1);
 	pthread_mutex_unlock(&phi->look_m);
 	i = 0;
 	while (i < phi->nb_p)
@@ -90,16 +86,7 @@ int	creat_tread(t_philo *phi)
 		pthread_join(thread_l[i], NULL);
 		i++;
 	}
-	i = 0;
-	while (i < phi->nb_p)
-	{
-//		printf("F2\n");
-		pthread_join(thread_d[i], NULL);
-		i++;
-	}
-//	printf("F3\n");
-	pthread_join(thread_t, NULL);
-//	printf("F4\n");
+	pthread_join(thread_d, NULL);
 	pthread_mutex_destroy(&phi->dead_m);
 	pthread_mutex_destroy(&phi->look_m);
 	data_tmp = data_tmp1;
