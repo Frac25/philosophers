@@ -58,6 +58,6 @@ long long	tv(void);
 int			printf_m(t_data *data, char *c);
 int			printf_l(t_data *data, char *c);
 int			check_dead(t_data *data);
-int			gp(int n);
+//int			gp(int n);
 
 #endif

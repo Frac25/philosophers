@@ -80,11 +80,11 @@ int	check_dead(t_data *data)
 	return(0);
 }
 
-int	gp(int n)
+/*int	gp(int n) // non utilise
 {
 	if(n == 1)
 		return (1);
 	else if (n % 2 == 0)
 		return(2);
 	return (3);
-}
+}*/

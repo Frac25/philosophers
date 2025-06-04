@@ -1,0 +1,1014 @@
+print 1749028748340 P2 is eating
+print 1749028748340 P1 is sleeping
+print 1749028748341 P4 is eating
+print 1749028748540 P3 is thinking
+print 1749028748540 P2 is sleeping
+print 1749028748541 P1 is thinking
+print 1749028748541 P1 has taken next fork
+print 1749028748541 P4 is sleeping
+print 1749028748541 P1 has taken n fork
+print 1749028748541 P1 is eating
+print 1749028748541 P3 has taken n fork
+print 1749028748541 P3 has taken next fork
+print 1749028748541 P3 is eating
+print 1749028748745 P2 is thinking
+print 1749028748746 P3 is sleeping
+print 1749028748746 P4 is thinking
+print 1749028748746 P1 is sleeping
+print 1749028748746 P2 has taken n fork
+print 1749028748746 P2 has taken next fork
+print 1749028748746 P2 is eating
+print 1749028748746 P4 has taken n fork
+print 1749028748746 P4 has taken next fork
+print 1749028748746 P4 is eating
+print 1749028748946 P4 is sleeping
+print 1749028748946 P1 is thinking
+print 1749028748946 P1 has taken next fork
+print 1749028748946 P1 has taken n fork
+print 1749028748946 P3 is thinking
+print 1749028748946 P3 has taken n fork
+print 1749028748946 P3 has taken next fork
+print 1749028748946 P3 is eating
+print 1749028748946 P1 is eating
+print 1749028748946 P2 is sleeping
+print 1749028749147 P4 is thinking
+print 1749028749151 P2 is thinking
+print 1749028749151 P2 has taken n fork
+print 1749028749151 P2 has taken next fork
+print 1749028749151 P2 is eating
+print 1749028749151 P1 is sleeping
+print 1749028749152 P3 is sleeping
+print 1749028749152 P4 has taken n fork
+print 1749028749152 P4 has taken next fork
+print 1749028749152 P4 is eating
+print 1749028749354 P3 is thinking
+print 1749028749354 P4 is sleeping
+print 1749028749354 P2 is sleeping
+print 1749028749354 P3 has taken n fork
+print 1749028749354 P3 has taken next fork
+print 1749028749354 P3 is eating
+print 1749028749354 P1 is thinking
+print 1749028749354 P1 has taken next fork
+print 1749028749354 P1 has taken n fork
+print 1749028749354 P1 is eating
+print 1749028749559 P3 is sleeping
+print 1749028749559 P2 is thinking
+print 1749028749559 P2 has taken n fork
+print 1749028749559 P2 has taken next fork
+print 1749028749559 P4 is thinking
+print 1749028749559 P4 has taken n fork
+print 1749028749559 P4 has taken next fork
+print 1749028749559 P4 is eating
+print 1749028749559 P2 is eating
+print 1749028749559 P1 is sleeping
+print 1749028749763 P3 is thinking
+print 1749028749763 P2 is sleeping
+print 1749028749763 P1 is thinking
+print 1749028749763 P1 has taken next fork
+print 1749028749763 P1 has taken n fork
+print 1749028749763 P1 is eating
+print 1749028749763 P3 has taken n fork
+print 1749028749763 P3 has taken next fork
+print 1749028749763 P4 is sleeping
+print 1749028749763 P3 is eating
+print 1749028749966 P4 is thinking
+print 1749028749966 P4 has taken n fork
+print 1749028749966 P4 has taken next fork
+print 1749028749966 P4 is eating
+print 1749028749966 P1 is sleeping
+print 1749028749966 P2 is thinking
+print 1749028749966 P2 has taken n fork
+print 1749028749966 P2 has taken next fork
+print 1749028749966 P2 is eating
+print 1749028749966 P3 is sleeping
+print 1749028750167 P1 is thinking
+print 1749028750167 P4 is sleeping
+print 1749028750167 P2 is sleeping
+print 1749028750167 P3 is thinking
+print 1749028750167 P3 has taken n fork
+print 1749028750167 P3 has taken next fork
+print 1749028750167 P3 is eating
+print 1749028750167 P1 has taken next fork
+print 1749028750167 P1 has taken n fork
+print 1749028750167 P1 is eating
+print 1749028750367 P1 is sleeping
+print 1749028750368 P2 is thinking
+print 1749028750368 P2 has taken n fork
+print 1749028750368 P2 has taken next fork
+print 1749028750368 P4 is thinking
+print 1749028750368 P4 has taken n fork
+print 1749028750368 P4 has taken next fork
+print 1749028750368 P4 is eating
+print 1749028750368 P3 is sleeping
+print 1749028750368 P2 is eating
+print 1749028750568 P1 is thinking
+print 1749028750568 P3 is thinking
+print 1749028750568 P2 is sleeping
+print 1749028750568 P1 has taken next fork
+print 1749028750568 P1 has taken n fork
+print 1749028750568 P4 is sleeping
+print 1749028750568 P3 has taken n fork
+print 1749028750568 P3 has taken next fork
+print 1749028750569 P1 is eating
+print 1749028750569 P3 is eating
+print 1749028750769 P2 is thinking
+print 1749028750769 P2 has taken n fork
+print 1749028750769 P2 has taken next fork
+print 1749028750769 P2 is eating
+print 1749028750769 P3 is sleeping
+print 1749028750769 P1 is sleeping
+print 1749028750769 P4 is thinking
+print 1749028750769 P4 has taken n fork
+print 1749028750769 P4 has taken next fork
+print 1749028750769 P4 is eating
+print 1749028750969 P2 is sleeping
+print 1749028750969 P1 is thinking
+print 1749028750969 P1 has taken next fork
+print 1749028750969 P1 has taken n fork
+print 1749028750969 P1 is eating
+print 1749028750969 P3 is thinking
+print 1749028750970 P4 is sleeping
+print 1749028750970 P3 has taken n fork
+print 1749028750970 P3 has taken next fork
+print 1749028750970 P3 is eating
+print 1749028751169 P2 is thinking
+print 1749028751170 P1 is sleeping
+print 1749028751170 P4 is thinking
+print 1749028751170 P4 has taken n fork
+print 1749028751170 P4 has taken next fork
+print 1749028751170 P2 has taken n fork
+print 1749028751170 P4 is eating
+print 1749028751170 P3 is sleeping
+print 1749028751170 P2 has taken next fork
+print 1749028751170 P2 is eating
+print 1749028751370 P1 is thinking
+print 1749028751370 P3 is thinking
+print 1749028751370 P3 has taken n fork
+print 1749028751370 P3 has taken next fork
+print 1749028751370 P2 is sleeping
+print 1749028751370 P1 has taken next fork
+print 1749028751370 P1 has taken n fork
+print 1749028751370 P1 is eating
+print 1749028751371 P3 is eating
+print 1749028751371 P4 is sleeping
+print 1749028751571 P2 is thinking
+print 1749028751571 P3 is sleeping
+print 1749028751571 P1 is sleeping
+print 1749028751572 P4 is thinking
+print 1749028751572 P4 has taken n fork
+print 1749028751572 P4 has taken next fork
+print 1749028751572 P4 is eating
+print 1749028751572 P2 has taken n fork
+print 1749028751572 P2 has taken next fork
+print 1749028751572 P2 is eating
+print 1749028751774 P3 is thinking
+print 1749028751774 P2 is sleeping
+print 1749028751774 P1 is thinking
+print 1749028751774 P1 has taken next fork
+print 1749028751774 P1 has taken n fork
+print 1749028751774 P3 has taken n fork
+print 1749028751774 P3 has taken next fork
+print 1749028751774 P3 is eating
+print 1749028751774 P4 is sleeping
+print 1749028751774 P1 is eating
+print 1749028751979 P4 is thinking
+print 1749028751979 P4 has taken n fork
+print 1749028751979 P4 has taken next fork
+print 1749028751979 P2 is thinking
+print 1749028751979 P1 is sleeping
+print 1749028751979 P3 is sleeping
+print 1749028751979 P4 is eating
+print 1749028751979 P2 has taken n fork
+print 1749028751980 P2 has taken next fork
+print 1749028751980 P2 is eating
+print 1749028752182 P1 is thinking
+print 1749028752182 P1 has taken next fork
+print 1749028752182 P1 has taken n fork
+print 1749028752183 P1 is eating
+print 1749028752183 P3 is thinking
+print 1749028752183 P4 is sleeping
+print 1749028752183 P2 is sleeping
+print 1749028752183 P3 has taken n fork
+print 1749028752183 P3 has taken next fork
+print 1749028752183 P3 is eating
+print 1749028752387 P2 is thinking
+print 1749028752387 P4 is thinking
+print 1749028752387 P4 has taken n fork
+print 1749028752387 P4 has taken next fork
+print 1749028752387 P3 is sleeping
+print 1749028752387 P1 is sleeping
+print 1749028752387 P4 is eating
+print 1749028752387 P2 has taken n fork
+print 1749028752387 P2 has taken next fork
+print 1749028752387 P2 is eating
+print 1749028752591 P3 is thinking
+print 1749028752591 P1 is thinking
+print 1749028752591 P2 is sleeping
+print 1749028752591 P4 is sleeping
+print 1749028752591 P3 has taken n fork
+print 1749028752591 P3 has taken next fork
+print 1749028752591 P1 has taken next fork
+print 1749028752591 P3 is eating
+print 1749028752591 P1 has taken n fork
+print 1749028752592 P1 is eating
+print 1749028752796 P3 is sleeping
+print 1749028752796 P2 is thinking
+print 1749028752796 P4 is thinking
+print 1749028752796 P2 has taken n fork
+print 1749028752796 P2 has taken next fork
+print 1749028752796 P1 is sleeping
+print 1749028752796 P4 has taken n fork
+print 1749028752796 P4 has taken next fork
+print 1749028752796 P2 is eating
+print 1749028752796 P4 is eating
+print 1749028753000 P1 is thinking
+print 1749028753000 P4 is sleeping
+print 1749028753000 P2 is sleeping
+print 1749028753000 P3 is thinking
+print 1749028753000 P3 has taken n fork
+print 1749028753000 P3 has taken next fork
+print 1749028753000 P3 is eating
+print 1749028753000 P1 has taken next fork
+print 1749028753000 P1 has taken n fork
+print 1749028753000 P1 is eating
+print 1749028753200 P4 is thinking
+print 1749028753200 P2 is thinking
+print 1749028753201 P2 has taken n fork
+print 1749028753201 P2 has taken next fork
+print 1749028753201 P4 has taken n fork
+print 1749028753201 P4 has taken next fork
+print 1749028753201 P4 is eating
+print 1749028753201 P3 is sleeping
+print 1749028753201 P2 is eating
+print 1749028753201 P1 is sleeping
+print 1749028753403 P4 is sleeping
+print 1749028753403 P3 is thinking
+print 1749028753403 P3 has taken n fork
+print 1749028753403 P3 has taken next fork
+print 1749028753403 P3 is eating
+print 1749028753403 P2 is sleeping
+print 1749028753403 P1 is thinking
+print 1749028753403 P1 has taken next fork
+print 1749028753403 P1 has taken n fork
+print 1749028753403 P1 is eating
+print 1749028753604 P4 is thinking
+print 1749028753604 P4 has taken n fork
+print 1749028753604 P4 has taken next fork
+print 1749028753604 P4 is eating
+print 1749028753604 P1 is sleeping
+print 1749028753604 P2 is thinking
+print 1749028753604 P3 is sleeping
+print 1749028753604 P2 has taken n fork
+print 1749028753604 P2 has taken next fork
+print 1749028753604 P2 is eating
+print 1749028753806 P1 is thinking
+print 1749028753806 P1 has taken next fork
+print 1749028753806 P3 is thinking
+print 1749028753806 P3 has taken n fork
+print 1749028753806 P3 has taken next fork
+print 1749028753806 P3 is eating
+print 1749028753806 P1 has taken n fork
+print 1749028753806 P4 is sleeping
+print 1749028753806 P2 is sleeping
+print 1749028753807 P1 is eating
+print 1749028754006 P3 is sleeping
+print 1749028754007 P2 is thinking
+print 1749028754007 P2 has taken n fork
+print 1749028754007 P2 has taken next fork
+print 1749028754007 P1 is sleeping
+print 1749028754007 P2 is eating
+print 1749028754007 P4 is thinking
+print 1749028754007 P4 has taken n fork
+print 1749028754007 P4 has taken next fork
+print 1749028754007 P4 is eating
+print 1749028754207 P3 is thinking
+print 1749028754207 P1 is thinking
+print 1749028754207 P2 is sleeping
+print 1749028754207 P4 is sleeping
+print 1749028754207 P1 has taken next fork
+print 1749028754207 P1 has taken n fork
+print 1749028754207 P1 is eating
+print 1749028754207 P3 has taken n fork
+print 1749028754207 P3 has taken next fork
+print 1749028754207 P3 is eating
+print 1749028754407 P2 is thinking
+print 1749028754407 P4 is thinking
+print 1749028754407 P1 is sleeping
+print 1749028754407 P4 has taken n fork
+print 1749028754407 P4 has taken next fork
+print 1749028754407 P4 is eating
+print 1749028754407 P2 has taken n fork
+print 1749028754407 P2 has taken next fork
+print 1749028754407 P3 is sleeping
+print 1749028754408 P2 is eating
+print 1749028754609 P2 is sleeping
+print 1749028754610 P4 is sleeping
+print 1749028754610 P3 is thinking
+print 1749028754610 P3 has taken n fork
+print 1749028754610 P3 has taken next fork
+print 1749028754610 P3 is eating
+print 1749028754610 P1 is thinking
+print 1749028754610 P1 has taken next fork
+print 1749028754610 P1 has taken n fork
+print 1749028754610 P1 is eating
+print 1749028754812 P2 is thinking
+print 1749028754812 P2 has taken n fork
+print 1749028754813 P2 has taken next fork
+print 1749028754813 P1 is sleeping
+print 1749028754813 P2 is eating
+print 1749028754813 P3 is sleeping
+print 1749028754813 P4 is thinking
+print 1749028754813 P4 has taken n fork
+print 1749028754813 P4 has taken next fork
+print 1749028754813 P4 is eating
+print 1749028755013 P3 is thinking
+print 1749028755013 P1 is thinking
+print 1749028755013 P2 is sleeping
+print 1749028755013 P4 is sleeping
+print 1749028755013 P3 has taken n fork
+print 1749028755013 P3 has taken next fork
+print 1749028755013 P1 has taken next fork
+print 1749028755013 P1 has taken n fork
+print 1749028755013 P1 is eating
+print 1749028755013 P3 is eating
+print 1749028755213 P2 is thinking
+print 1749028755213 P4 is thinking
+print 1749028755213 P2 has taken n fork
+print 1749028755213 P2 has taken next fork
+print 1749028755213 P2 is eating
+print 1749028755213 P4 has taken n fork
+print 1749028755213 P4 has taken next fork
+print 1749028755213 P3 is sleeping
+print 1749028755214 P4 is eating
+print 1749028755214 P1 is sleeping
+print 1749028755417 P2 is sleeping
+print 1749028755417 P3 is thinking
+print 1749028755417 P1 is thinking
+print 1749028755417 P3 has taken n fork
+print 1749028755417 P3 has taken next fork
+print 1749028755417 P3 is eating
+print 1749028755417 P4 is sleeping
+print 1749028755417 P1 has taken next fork
+print 1749028755417 P1 has taken n fork
+print 1749028755417 P1 is eating
+print 1749028755618 P2 is thinking
+print 1749028755618 P4 is thinking
+print 1749028755618 P4 has taken n fork
+print 1749028755618 P4 has taken next fork
+print 1749028755618 P1 is sleeping
+print 1749028755618 P2 has taken n fork
+print 1749028755618 P2 has taken next fork
+print 1749028755618 P2 is eating
+print 1749028755618 P4 is eating
+print 1749028755618 P3 is sleeping
+print 1749028755818 P1 is thinking
+print 1749028755818 P2 is sleeping
+print 1749028755818 P1 has taken next fork
+print 1749028755818 P1 has taken n fork
+print 1749028755818 P3 is thinking
+print 1749028755818 P3 has taken n fork
+print 1749028755818 P3 has taken next fork
+print 1749028755818 P3 is eating
+print 1749028755818 P1 is eating
+print 1749028755818 P4 is sleeping
+print 1749028756019 P2 is thinking
+print 1749028756019 P2 has taken n fork
+print 1749028756019 P2 has taken next fork
+print 1749028756019 P2 is eating
+print 1749028756019 P4 is thinking
+print 1749028756019 P4 has taken n fork
+print 1749028756019 P4 has taken next fork
+print 1749028756019 P4 is eating
+print 1749028756019 P3 is sleeping
+print 1749028756019 P1 is sleeping
+print 1749028756220 P1 is thinking
+print 1749028756220 P3 is thinking
+print 1749028756220 P3 has taken n fork
+print 1749028756220 P3 has taken next fork
+print 1749028756220 P3 is eating
+print 1749028756220 P1 has taken next fork
+print 1749028756220 P1 has taken n fork
+print 1749028756220 P2 is sleeping
+print 1749028756220 P1 is eating
+print 1749028756220 P4 is sleeping
+print 1749028756420 P3 is sleeping
+print 1749028756420 P1 is sleeping
+print 1749028756420 P4 is thinking
+print 1749028756420 P4 has taken n fork
+print 1749028756420 P4 has taken next fork
+print 1749028756420 P4 is eating
+print 1749028756420 P2 is thinking
+print 1749028756420 P2 has taken n fork
+print 1749028756420 P2 has taken next fork
+print 1749028756420 P2 is eating
+print 1749028756620 P3 is thinking
+print 1749028756620 P1 is thinking
+print 1749028756620 P2 is sleeping
+print 1749028756621 P1 has taken next fork
+print 1749028756621 P3 has taken n fork
+print 1749028756621 P3 has taken next fork
+print 1749028756621 P1 has taken n fork
+print 1749028756621 P1 is eating
+print 1749028756621 P4 is sleeping
+print 1749028756621 P3 is eating
+print 1749028756821 P2 is thinking
+print 1749028756821 P1 is sleeping
+print 1749028756821 P3 is sleeping
+print 1749028756821 P4 is thinking
+print 1749028756821 P4 has taken n fork
+print 1749028756821 P4 has taken next fork
+print 1749028756821 P4 is eating
+print 1749028756821 P2 has taken n fork
+print 1749028756821 P2 has taken next fork
+print 1749028756821 P2 is eating
+print 1749028757021 P1 is thinking
+print 1749028757021 P3 is thinking
+print 1749028757021 P4 is sleeping
+print 1749028757021 P1 has taken next fork
+print 1749028757021 P3 has taken n fork
+print 1749028757021 P2 is sleeping
+print 1749028757021 P3 has taken next fork
+print 1749028757021 P3 is eating
+print 1749028757021 P1 has taken n fork
+print 1749028757021 P1 is eating
+print 1749028757221 P4 is thinking
+print 1749028757221 P3 is sleeping
+print 1749028757221 P1 is sleeping
+print 1749028757222 P2 is thinking
+print 1749028757222 P4 has taken n fork
+print 1749028757222 P4 has taken next fork
+print 1749028757222 P4 is eating
+print 1749028757222 P2 has taken n fork
+print 1749028757222 P2 has taken next fork
+print 1749028757222 P2 is eating
+print 1749028757424 P3 is thinking
+print 1749028757424 P1 is thinking
+print 1749028757424 P1 has taken next fork
+print 1749028757424 P1 has taken n fork
+print 1749028757424 P4 is sleeping
+print 1749028757424 P3 has taken n fork
+print 1749028757424 P1 is eating
+print 1749028757424 P2 is sleeping
+print 1749028757424 P3 has taken next fork
+print 1749028757424 P3 is eating
+print 1749028757624 P4 is thinking
+print 1749028757624 P2 is thinking
+print 1749028757624 P2 has taken n fork
+print 1749028757624 P2 has taken next fork
+print 1749028757624 P3 is sleeping
+print 1749028757624 P4 has taken n fork
+print 1749028757624 P4 has taken next fork
+print 1749028757624 P1 is sleeping
+print 1749028757625 P2 is eating
+print 1749028757625 P4 is eating
+print 1749028757829 P3 is thinking
+print 1749028757829 P2 is sleeping
+print 1749028757830 P3 has taken n fork
+print 1749028757830 P3 has taken next fork
+print 1749028757830 P3 is eating
+print 1749028757830 P4 is sleeping
+print 1749028757830 P1 is thinking
+print 1749028757830 P1 has taken next fork
+print 1749028757830 P1 has taken n fork
+print 1749028757830 P1 is eating
+print 1749028758031 P2 is thinking
+print 1749028758031 P4 is thinking
+print 1749028758031 P4 has taken n fork
+print 1749028758031 P4 has taken next fork
+print 1749028758031 P3 is sleeping
+print 1749028758031 P1 is sleeping
+print 1749028758031 P4 is eating
+print 1749028758031 P2 has taken n fork
+print 1749028758031 P2 has taken next fork
+print 1749028758031 P2 is eating
+print 1749028758231 P1 is thinking
+print 1749028758231 P4 is sleeping
+print 1749028758231 P2 is sleeping
+print 1749028758231 P3 is thinking
+print 1749028758231 P1 has taken next fork
+print 1749028758231 P1 has taken n fork
+print 1749028758231 P3 has taken n fork
+print 1749028758231 P3 has taken next fork
+print 1749028758231 P3 is eating
+print 1749028758231 P1 is eating
+print 1749028758432 P3 is sleeping
+print 1749028758432 P2 is thinking
+print 1749028758433 P2 has taken n fork
+print 1749028758433 P2 has taken next fork
+print 1749028758433 P4 is thinking
+print 1749028758433 P4 has taken n fork
+print 1749028758433 P4 has taken next fork
+print 1749028758433 P4 is eating
+print 1749028758433 P1 is sleeping
+print 1749028758433 P2 is eating
+print 1749028758633 P3 is thinking
+print 1749028758633 P2 is sleeping
+print 1749028758633 P1 is thinking
+print 1749028758633 P4 is sleeping
+print 1749028758633 P3 has taken n fork
+print 1749028758633 P3 has taken next fork
+print 1749028758633 P3 is eating
+print 1749028758633 P1 has taken next fork
+print 1749028758633 P1 has taken n fork
+print 1749028758633 P1 is eating
+print 1749028758833 P2 is thinking
+print 1749028758833 P4 is thinking
+print 1749028758833 P2 has taken n fork
+print 1749028758833 P3 is sleeping
+print 1749028758833 P2 has taken next fork
+print 1749028758833 P2 is eating
+print 1749028758833 P1 is sleeping
+print 1749028758833 P4 has taken n fork
+print 1749028758833 P4 has taken next fork
+print 1749028758833 P4 is eating
+print 1749028759037 P3 is thinking
+print 1749028759037 P1 is thinking
+print 1749028759037 P1 has taken next fork
+print 1749028759037 P1 has taken n fork
+print 1749028759037 P3 has taken n fork
+print 1749028759037 P3 has taken next fork
+print 1749028759037 P3 is eating
+print 1749028759037 P4 is sleeping
+print 1749028759037 P2 is sleeping
+print 1749028759037 P1 is eating
+print 1749028759237 P3 is sleeping
+print 1749028759237 P2 is thinking
+print 1749028759237 P4 is thinking
+print 1749028759237 P4 has taken n fork
+print 1749028759237 P4 has taken next fork
+print 1749028759237 P4 is eating
+print 1749028759237 P2 has taken n fork
+print 1749028759238 P2 has taken next fork
+print 1749028759238 P2 is eating
+print 1749028759238 P1 is sleeping
+print 1749028759440 P3 is thinking
+print 1749028759440 P3 has taken n fork
+print 1749028759440 P3 has taken next fork
+print 1749028759440 P3 is eating
+print 1749028759440 P2 is sleeping
+print 1749028759440 P1 is thinking
+print 1749028759440 P1 has taken next fork
+print 1749028759440 P1 has taken n fork
+print 1749028759440 P1 is eating
+print 1749028759440 P4 is sleeping
+print 1749028759640 P3 is sleeping
+print 1749028759640 P2 is thinking
+print 1749028759641 P2 has taken n fork
+print 1749028759641 P2 has taken next fork
+print 1749028759641 P2 is eating
+print 1749028759641 P4 is thinking
+print 1749028759641 P4 has taken n fork
+print 1749028759641 P4 has taken next fork
+print 1749028759641 P4 is eating
+print 1749028759641 P1 is sleeping
+print 1749028759844 P1 is thinking
+print 1749028759844 P4 is sleeping
+print 1749028759844 P3 is thinking
+print 1749028759844 P3 has taken n fork
+print 1749028759844 P3 has taken next fork
+print 1749028759844 P3 is eating
+print 1749028759844 P1 has taken next fork
+print 1749028759844 P1 has taken n fork
+print 1749028759844 P1 is eating
+print 1749028759844 P2 is sleeping
+print 1749028760046 P1 is sleeping
+print 1749028760046 P3 is sleeping
+print 1749028760046 P4 is thinking
+print 1749028760046 P2 is thinking
+print 1749028760046 P2 has taken n fork
+print 1749028760046 P2 has taken next fork
+print 1749028760046 P2 is eating
+print 1749028760046 P4 has taken n fork
+print 1749028760046 P4 has taken next fork
+print 1749028760046 P4 is eating
+print 1749028760249 P1 is thinking
+print 1749028760249 P3 is thinking
+print 1749028760249 P4 is sleeping
+print 1749028760249 P1 has taken next fork
+print 1749028760250 P1 has taken n fork
+print 1749028760250 P1 is eating
+print 1749028760250 P3 has taken n fork
+print 1749028760250 P3 has taken next fork
+print 1749028760250 P3 is eating
+print 1749028760250 P2 is sleeping
+print 1749028760450 P3 is sleeping
+print 1749028760450 P4 is thinking
+print 1749028760450 P4 has taken n fork
+print 1749028760450 P4 has taken next fork
+print 1749028760450 P4 is eating
+print 1749028760450 P1 is sleeping
+print 1749028760450 P2 is thinking
+print 1749028760450 P2 has taken n fork
+print 1749028760450 P2 has taken next fork
+print 1749028760450 P2 is eating
+print 1749028760651 P1 is thinking
+print 1749028760651 P3 is thinking
+print 1749028760651 P3 has taken n fork
+print 1749028760651 P3 has taken next fork
+print 1749028760651 P1 has taken next fork
+print 1749028760651 P1 has taken n fork
+print 1749028760651 P3 is eating
+print 1749028760651 P1 is eating
+print 1749028760651 P2 is sleeping
+print 1749028760651 P4 is sleeping
+print 1749028760851 P3 is sleeping
+print 1749028760851 P1 is sleeping
+print 1749028760851 P2 is thinking
+print 1749028760851 P2 has taken n fork
+print 1749028760851 P2 has taken next fork
+print 1749028760851 P2 is eating
+print 1749028760851 P4 is thinking
+print 1749028760851 P4 has taken n fork
+print 1749028760851 P4 has taken next fork
+print 1749028760851 P4 is eating
+print 1749028761052 P3 is thinking
+print 1749028761052 P3 has taken n fork
+print 1749028761052 P3 has taken next fork
+print 1749028761052 P3 is eating
+print 1749028761052 P4 is sleeping
+print 1749028761052 P2 is sleeping
+print 1749028761052 P1 is thinking
+print 1749028761052 P1 has taken next fork
+print 1749028761052 P1 has taken n fork
+print 1749028761052 P1 is eating
+print 1749028761252 P1 is sleeping
+print 1749028761253 P4 is thinking
+print 1749028761253 P4 has taken n fork
+print 1749028761253 P4 has taken next fork
+print 1749028761253 P4 is eating
+print 1749028761253 P2 is thinking
+print 1749028761253 P2 has taken n fork
+print 1749028761253 P2 has taken next fork
+print 1749028761253 P3 is sleeping
+print 1749028761253 P2 is eating
+print 1749028761453 P1 is thinking
+print 1749028761453 P4 is sleeping
+print 1749028761453 P1 has taken next fork
+print 1749028761453 P3 is thinking
+print 1749028761453 P2 is sleeping
+print 1749028761453 P3 has taken n fork
+print 1749028761453 P3 has taken next fork
+print 1749028761453 P1 has taken n fork
+print 1749028761453 P1 is eating
+print 1749028761453 P3 is eating
+print 1749028761653 P4 is thinking
+print 1749028761653 P1 is sleeping
+print 1749028761653 P4 has taken n fork
+print 1749028761653 P3 is sleeping
+print 1749028761653 P4 has taken next fork
+print 1749028761653 P4 is eating
+print 1749028761653 P2 is thinking
+print 1749028761653 P2 has taken n fork
+print 1749028761653 P2 has taken next fork
+print 1749028761653 P2 is eating
+print 1749028761854 P1 is thinking
+print 1749028761854 P1 has taken next fork
+print 1749028761854 P1 has taken n fork
+print 1749028761854 P4 is sleeping
+print 1749028761855 P1 is eating
+print 1749028761855 P3 is thinking
+print 1749028761855 P3 has taken n fork
+print 1749028761855 P2 is sleeping
+print 1749028761855 P3 has taken next fork
+print 1749028761855 P3 is eating
+print 1749028762055 P4 is thinking
+print 1749028762055 P4 has taken n fork
+print 1749028762055 P4 has taken next fork
+print 1749028762055 P1 is sleeping
+print 1749028762055 P3 is sleeping
+print 1749028762055 P4 is eating
+print 1749028762055 P2 is thinking
+print 1749028762055 P2 has taken n fork
+print 1749028762055 P2 has taken next fork
+print 1749028762055 P2 is eating
+print 1749028762256 P1 is thinking
+print 1749028762256 P1 has taken next fork
+print 1749028762256 P1 has taken n fork
+print 1749028762256 P3 is thinking
+print 1749028762256 P2 is sleeping
+print 1749028762256 P1 is eating
+print 1749028762256 P4 is sleeping
+print 1749028762256 P3 has taken n fork
+print 1749028762256 P3 has taken next fork
+print 1749028762256 P3 is eating
+print 1749028762456 P4 is thinking
+print 1749028762456 P1 is sleeping
+print 1749028762456 P3 is sleeping
+print 1749028762456 P4 has taken n fork
+print 1749028762456 P4 has taken next fork
+print 1749028762456 P2 is thinking
+print 1749028762456 P4 is eating
+print 1749028762456 P2 has taken n fork
+print 1749028762456 P2 has taken next fork
+print 1749028762456 P2 is eating
+print 1749028762657 P1 is thinking
+print 1749028762657 P2 is sleeping
+print 1749028762657 P4 is sleeping
+print 1749028762657 P1 has taken next fork
+print 1749028762657 P1 has taken n fork
+print 1749028762657 P1 is eating
+print 1749028762657 P3 is thinking
+print 1749028762657 P3 has taken n fork
+print 1749028762657 P3 has taken next fork
+print 1749028762657 P3 is eating
+print 1749028762857 P2 is thinking
+print 1749028762857 P4 is thinking
+print 1749028762857 P2 has taken n fork
+print 1749028762857 P2 has taken next fork
+print 1749028762857 P2 is eating
+print 1749028762857 P1 is sleeping
+print 1749028762857 P4 has taken n fork
+print 1749028762858 P4 has taken next fork
+print 1749028762858 P3 is sleeping
+print 1749028762858 P4 is eating
+print 1749028763058 P2 is sleeping
+print 1749028763058 P1 is thinking
+print 1749028763063 P3 is thinking
+print 1749028763063 P1 has taken next fork
+print 1749028763063 P1 has taken n fork
+print 1749028763063 P1 is eating
+print 1749028763063 P4 is sleeping
+print 1749028763063 P3 has taken n fork
+print 1749028763063 P3 has taken next fork
+print 1749028763063 P3 is eating
+print 1749028763259 P2 is thinking
+print 1749028763265 P1 is sleeping
+print 1749028763265 P4 is thinking
+print 1749028763265 P4 has taken n fork
+print 1749028763265 P3 is sleeping
+print 1749028763265 P4 has taken next fork
+print 1749028763265 P4 is eating
+print 1749028763265 P2 has taken n fork
+print 1749028763265 P2 has taken next fork
+print 1749028763265 P2 is eating
+print 1749028763469 P1 is thinking
+print 1749028763469 P1 has taken next fork
+print 1749028763469 P1 has taken n fork
+print 1749028763469 P3 is thinking
+print 1749028763469 P4 is sleeping
+print 1749028763469 P1 is eating
+print 1749028763469 P2 is sleeping
+print 1749028763469 P3 has taken n fork
+print 1749028763469 P3 has taken next fork
+print 1749028763469 P3 is eating
+print 1749028763670 P2 is thinking
+print 1749028763670 P1 is sleeping
+print 1749028763670 P4 is thinking
+print 1749028763670 P2 has taken n fork
+print 1749028763670 P2 has taken next fork
+print 1749028763670 P4 has taken n fork
+print 1749028763670 P4 has taken next fork
+print 1749028763670 P4 is eating
+print 1749028763670 P2 is eating
+print 1749028763670 P3 is sleeping
+print 1749028763872 P1 is thinking
+print 1749028763872 P1 has taken next fork
+print 1749028763872 P1 has taken n fork
+print 1749028763872 P4 is sleeping
+print 1749028763872 P2 is sleeping
+print 1749028763872 P1 is eating
+print 1749028763872 P3 is thinking
+print 1749028763872 P3 has taken n fork
+print 1749028763872 P3 has taken next fork
+print 1749028763872 P3 is eating
+print 1749028764077 P3 is sleeping
+print 1749028764077 P2 is thinking
+print 1749028764077 P2 has taken n fork
+print 1749028764077 P2 has taken next fork
+print 1749028764077 P2 is eating
+print 1749028764077 P4 is thinking
+print 1749028764077 P4 has taken n fork
+print 1749028764077 P4 has taken next fork
+print 1749028764077 P4 is eating
+print 1749028764077 P1 is sleeping
+print 1749028764279 P1 is thinking
+print 1749028764279 P2 is sleeping
+print 1749028764279 P3 is thinking
+print 1749028764279 P3 has taken n fork
+print 1749028764279 P3 has taken next fork
+print 1749028764279 P4 is sleeping
+print 1749028764279 P1 has taken next fork
+print 1749028764279 P1 has taken n fork
+print 1749028764279 P1 is eating
+print 1749028764279 P3 is eating
+print 1749028764479 P2 is thinking
+print 1749028764479 P4 is thinking
+print 1749028764479 P3 is sleeping
+print 1749028764479 P4 has taken n fork
+print 1749028764479 P4 has taken next fork
+print 1749028764479 P2 has taken n fork
+print 1749028764479 P2 has taken next fork
+print 1749028764479 P2 is eating
+print 1749028764479 P4 is eating
+print 1749028764479 P1 is sleeping
+print 1749028764679 P3 is thinking
+print 1749028764680 P2 is sleeping
+print 1749028764680 P4 is sleeping
+print 1749028764680 P3 has taken n fork
+print 1749028764680 P3 has taken next fork
+print 1749028764680 P3 is eating
+print 1749028764680 P1 is thinking
+print 1749028764680 P1 has taken next fork
+print 1749028764680 P1 has taken n fork
+print 1749028764680 P1 is eating
+print 1749028764881 P2 is thinking
+print 1749028764881 P2 has taken n fork
+print 1749028764881 P2 has taken next fork
+print 1749028764881 P4 is thinking
+print 1749028764881 P4 has taken n fork
+print 1749028764881 P4 has taken next fork
+print 1749028764881 P4 is eating
+print 1749028764881 P1 is sleeping
+print 1749028764881 P2 is eating
+print 1749028764881 P3 is sleeping
+print 1749028765081 P3 is thinking
+print 1749028765081 P1 is thinking
+print 1749028765082 P1 has taken next fork
+print 1749028765082 P1 has taken n fork
+print 1749028765082 P3 has taken n fork
+print 1749028765082 P3 has taken next fork
+print 1749028765082 P3 is eating
+print 1749028765082 P2 is sleeping
+print 1749028765082 P1 is eating
+print 1749028765082 P4 is sleeping
+print 1749028765282 P3 is sleeping
+print 1749028765282 P4 is thinking
+print 1749028765282 P1 is sleeping
+print 1749028765282 P2 is thinking
+print 1749028765282 P2 has taken n fork
+print 1749028765282 P2 has taken next fork
+print 1749028765282 P2 is eating
+print 1749028765282 P4 has taken n fork
+print 1749028765282 P4 has taken next fork
+print 1749028765282 P4 is eating
+print 1749028765482 P3 is thinking
+print 1749028765482 P1 is thinking
+print 1749028765482 P2 is sleeping
+print 1749028765482 P3 has taken n fork
+print 1749028765482 P3 has taken next fork
+print 1749028765482 P1 has taken next fork
+print 1749028765482 P1 has taken n fork
+print 1749028765482 P3 is eating
+print 1749028765482 P4 is sleeping
+print 1749028765483 P1 is eating
+print 1749028765683 P2 is thinking
+print 1749028765683 P4 is thinking
+print 1749028765683 P4 has taken n fork
+print 1749028765684 P4 has taken next fork
+print 1749028765684 P1 is sleeping
+print 1749028765684 P2 has taken n fork
+print 1749028765684 P2 has taken next fork
+print 1749028765684 P3 is sleeping
+print 1749028765684 P4 is eating
+print 1749028765684 P2 is eating
+print 1749028765884 P1 is thinking
+print 1749028765884 P3 is thinking
+print 1749028765884 P1 has taken next fork
+print 1749028765884 P2 is sleeping
+print 1749028765884 P4 is sleeping
+print 1749028765884 P3 has taken n fork
+print 1749028765884 P3 has taken next fork
+print 1749028765884 P3 is eating
+print 1749028765884 P1 has taken n fork
+print 1749028765884 P1 is eating
+print 1749028766084 P2 is thinking
+print 1749028766084 P4 is thinking
+print 1749028766084 P4 has taken n fork
+print 1749028766084 P4 has taken next fork
+print 1749028766084 P3 is sleeping
+print 1749028766084 P2 has taken n fork
+print 1749028766084 P2 has taken next fork
+print 1749028766084 P2 is eating
+print 1749028766084 P4 is eating
+print 1749028766085 P1 is sleeping
+print 1749028766285 P3 is thinking
+print 1749028766285 P2 is sleeping
+print 1749028766285 P1 is thinking
+print 1749028766285 P3 has taken n fork
+print 1749028766285 P3 has taken next fork
+print 1749028766285 P1 has taken next fork
+print 1749028766285 P1 has taken n fork
+print 1749028766285 P1 is eating
+print 1749028766285 P3 is eating
+print 1749028766285 P4 is sleeping
+print 1749028766485 P2 is thinking
+print 1749028766485 P1 is sleeping
+print 1749028766485 P3 is sleeping
+print 1749028766485 P2 has taken n fork
+print 1749028766485 P2 has taken next fork
+print 1749028766485 P2 is eating
+print 1749028766489 P4 is thinking
+print 1749028766489 P4 has taken n fork
+print 1749028766489 P4 has taken next fork
+print 1749028766489 P4 is eating
+print 1749028766686 P1 is thinking
+print 1749028766686 P3 is thinking
+print 1749028766687 P2 is sleeping
+print 1749028766689 P4 is sleeping
+print 1749028766689 P1 has taken next fork
+print 1749028766689 P1 has taken n fork
+print 1749028766690 P3 has taken n fork
+print 1749028766690 P3 has taken next fork
+print 1749028766690 P1 is eating
+print 1749028766690 P3 is eating
+print 1749028766887 P2 is thinking
+print 1749028766893 P4 is thinking
+print 1749028766893 P4 has taken n fork
+print 1749028766893 P4 has taken next fork
+print 1749028766893 P4 is eating
+print 1749028766893 P1 is sleeping
+print 1749028766893 P3 is sleeping
+print 1749028766893 P2 has taken n fork
+print 1749028766893 P2 has taken next fork
+print 1749028766893 P2 is eating
+print 1749028767095 P1 is thinking
+print 1749028767095 P4 is sleeping
+print 1749028767095 P2 is sleeping
+print 1749028767095 P1 has taken next fork
+print 1749028767095 P1 has taken n fork
+print 1749028767095 P1 is eating
+print 1749028767095 P3 is thinking
+print 1749028767095 P3 has taken n fork
+print 1749028767095 P3 has taken next fork
+print 1749028767095 P3 is eating
+print 1749028767296 P4 is thinking
+print 1749028767296 P4 has taken n fork
+print 1749028767296 P4 has taken next fork
+print 1749028767296 P4 is eating
+print 1749028767296 P1 is sleeping
+print 1749028767296 P2 is thinking
+print 1749028767296 P3 is sleeping
+print 1749028767296 P2 has taken n fork
+print 1749028767296 P2 has taken next fork
+print 1749028767296 P2 is eating
+print 1749028767499 P3 is thinking
+print 1749028767499 P1 is thinking
+print 1749028767499 P2 is sleeping
+print 1749028767499 P3 has taken n fork
+print 1749028767499 P3 has taken next fork
+print 1749028767499 P4 is sleeping
+print 1749028767499 P3 is eating
+print 1749028767499 P1 has taken next fork
+print 1749028767499 P1 has taken n fork
+print 1749028767499 P1 is eating
+print 1749028767703 P3 is sleeping
+print 1749028767703 P4 is thinking
+print 1749028767703 P4 has taken n fork
+print 1749028767703 P4 has taken next fork
+print 1749028767703 P1 is sleeping
+print 1749028767703 P4 is eating
+print 1749028767703 P2 is thinking
+print 1749028767703 P2 has taken n fork
+print 1749028767703 P2 has taken next fork
+print 1749028767703 P2 is eating
+print 1749028767907 P3 is thinking
+print 1749028767907 P1 is thinking
+print 1749028767907 P1 has taken next fork
+print 1749028767907 P1 has taken n fork
+print 1749028767907 P4 is sleeping
+print 1749028767907 P3 has taken n fork
+print 1749028767907 P3 has taken next fork
+print 1749028767907 P2 is sleeping
+print 1749028767907 P1 is eating
+print 1749028767907 P3 is eating
+print 1749028768111 P3 is sleeping
+print 1749028768111 P2 is thinking
+print 1749028768111 P2 has taken n fork
+print 1749028768112 P1 is sleeping
+print 1749028768112 P4 is thinking
+print 1749028768112 P2 has taken next fork
+print 1749028768112 P2 is eating
+print 1749028768112 P4 has taken n fork
+print 1749028768112 P4 has taken next fork
+print 1749028768112 P4 is eating
+print 1749028768312 P3 is thinking
+print 1749028768312 P2 is sleeping
+print 1749028768312 P1 is thinking
+print 1749028768312 P4 is sleeping
+print 1749028768312 P1 has taken next fork
+print 1749028768312 P1 has taken n fork
+print 1749028768312 P1 is eating
+print 1749028768312 P3 has taken n fork
+print 1749028768312 P3 has taken next fork
+print 1749028768312 P3 is eating
+print 1749028768515 P2 is thinking
+print 1749028768515 P4 is thinking
+print 1749028768515 P4 has taken n fork
+print 1749028768515 P4 has taken next fork
+print 1749028768515 P2 has taken n fork
+print 1749028768515 P2 has taken next fork
+print 1749028768515 P1 is sleeping
+print 1749028768515 P3 is sleeping
+print 1749028768516 P4 is eating
+print 1749028768516 P2 is eating
+print 1749028768720 P1 is thinking
+print 1749028768720 P3 is thinking
+print 1749028768720 P3 has taken n fork
+print 1749028768720 P3 has taken next fork
+print 1749028768720 P4 is sleeping
+print 1749028768720 P2 is sleeping
+print 1749028768720 P1 has taken next fork
+print 1749028768720 P1 has taken n fork
+print 1749028768720 P1 is eating
+print 1749028768720 P3 is eating
+print 1749028768925 P4 died

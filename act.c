@@ -22,7 +22,9 @@ int	p_eat (t_data *data)
 	pthread_mutex_unlock(&data->phi->dead_m);
 	printf_m(data, "is eating");
 	usleep(data->phi->t_e * 1000);
+	printf_m(data, "stop eating");
 	f_unlock(data);
+	printf_m(data, "unlock");
 	return (0);
 }
 
