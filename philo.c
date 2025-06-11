@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   philo.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sydubois <sydubois@student.42Lausanne.c    +#+  +:+       +#+        */
+/*   By: sydubois <sydubois@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/04 15:00:11 by sydubois          #+#    #+#             */
-/*   Updated: 2025/06/04 15:35:43 by sydubois         ###   ########.fr       */
+/*   Updated: 2025/06/11 14:57:39 by sydubois         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
-
-int	g_sleep = 5;
 
 int	init_philo(t_philo *phi)
 {
@@ -44,7 +42,7 @@ void	*p_live(void *arg)
 	pthread_mutex_lock(&data->phi->look_m);
 	pthread_mutex_unlock(&data->phi->look_m);
 	while (tv() < data->phi->start_time)
-		usleep(g_sleep);
+		usleep(100);
 	if (data->id % 2 == 0)
 		usleep(500);
 	while (1)
@@ -63,15 +61,19 @@ void	*p_live(void *arg)
 	return (NULL);
 }
 
-int	c_tread(t_philo *phi)
+int	creat_tread(t_philo *phi)
 {
 	pthread_t	thread_l[phi->nb_p];
 	pthread_t	thread_d;
-	t_data	*data_tmp;
-	t_data	*data_tmp1;
-	t_data	*data[phi->nb_p];
-	int i;
+	t_data		*data_tmp;
+	t_data		*data_tmp1;
+	t_data		*data[phi->nb_p];
+	int			i;
 
+	pthread_mutex_init(&phi->dead_m, NULL);
+	pthread_mutex_init(&phi->look_m, NULL);
+	phi->start_time = tv() + 500;
+	
 	data_tmp = NULL;
 	i = 0;
 	pthread_mutex_lock(&phi->look_m);
@@ -79,29 +81,17 @@ int	c_tread(t_philo *phi)
 	{
 
 		data[i] = malloc(sizeof(t_data));
-		init_data(data, phi, i, data_tmp);
+		init_data(data[i], phi, i, data_tmp);
 		if (i == 0)
-			data_tmp1 = data;
-		data_tmp = data;
+			data_tmp1 = data[i];
+		data_tmp = data[i];
 		pthread_mutex_init(&data[i]->fork_m, NULL);
-		pthread_create(&thread_l[i], NULL, p_live, data);
+		pthread_create(&thread_l[i], NULL, p_live, data[i]);
 		i++;
 	}
 	data_tmp1->next = data_tmp;
 	pthread_create(&thread_d, NULL, p_die, data_tmp1);
 	pthread_mutex_unlock(&phi->look_m);
-}
-
-int	creat_tread(t_philo *phi)
-{
-
-
-	int			i;
-
-	pthread_mutex_init(&phi->dead_m, NULL);
-	pthread_mutex_init(&phi->look_m, NULL);
-	phi->start_time = tv() + 500;
-	c_thread(phi);
 
 	i = 0;
 	while (i < phi->nb_p)

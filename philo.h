@@ -8,9 +8,6 @@
 
 #include<pthread.h>
 #include<sys/time.h>
-#include"ft_dprintf.h"
-
-extern int g_sleep;
 
 typedef struct s_philo
 {
@@ -47,7 +44,11 @@ int			init_data(t_data *data, t_philo *phi, int i, t_data *data_tmp);
 int			p_sleep (t_data *data);
 int			p_think (t_data *data);
 int			p_eat (t_data *data);
+
+//die
 void		*p_die(void *arg);
+int			check_die(t_data *data);
+int			check_eat_enaf(t_data *data);
 
 //lock
 int			f_unlock(t_data *data);
@@ -56,11 +57,8 @@ int			f_lock_w(t_data *data);
 
 //lib1
 int			ft_atoi(const char *str);
-int			ft_strlen(char *c);
 long long	tv(void);
 int			printf_m(t_data *data, char *c);
 int			printf_l(t_data *data, char *c);
-int			check_dead(t_data *data);
-//int			gp(int n);
 
 #endif

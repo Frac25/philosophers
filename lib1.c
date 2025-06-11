@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   lib1.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sydubois <sydubois@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/06/11 14:52:49 by sydubois          #+#    #+#             */
+/*   Updated: 2025/06/11 14:53:10 by sydubois         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include"philo.h"
 
 int	ft_atoi(const char *str)
@@ -25,20 +37,6 @@ int	ft_atoi(const char *str)
 	return (s * a);
 }
 
-int	ft_strlen(char *c)
-{
-	int i;
-
-	if(c == NULL)
-		return(0);
-	i = 0;
-	while(c[i])
-	{
-		i++;
-	}
-	return(i);
-}
-
 long long	tv(void)
 {
 	struct timeval	tv;
@@ -49,27 +47,28 @@ long long	tv(void)
 
 int	printf_m(t_data *data, char *c)
 {
-//	pthread_mutex_lock(&data->phi->dead_m);
-//	if(data->phi->dead == 1)
-//	{
-//		pthread_mutex_unlock(&data->phi->dead_m);
-//		return(-1);
-//	}
-//	pthread_mutex_unlock(&data->phi->dead_m);
+	pthread_mutex_lock(&data->phi->dead_m);
+	if (data->phi->dead == 1)
+	{
+		pthread_mutex_unlock(&data->phi->dead_m);
+		return (-1);
+	}
+	pthread_mutex_unlock(&data->phi->dead_m);
 	pthread_mutex_lock(&data->phi->look_m);
-	printf("print %lld P%d %s\n", tv(), data->id, c);
+	printf("%lld P%d %s\n", tv(), data->id, c);
 	pthread_mutex_unlock(&data->phi->look_m);
-	return(0);
+	return (0);
 }
 
 int	printf_l(t_data *data, char *c)
 {
 	pthread_mutex_lock(&data->phi->look_m);
-	printf("print %lld P%d %s\n", tv(), data->id, c);
+	printf("%lld P%d %s\n", tv(), data->id, c);
 	pthread_mutex_unlock(&data->phi->look_m);
-	return(0);
+	return (0);
 }
 
+/*
 int	check_dead(t_data *data)
 {
 	pthread_mutex_lock(&data->phi->dead_m);
@@ -81,3 +80,4 @@ int	check_dead(t_data *data)
 	pthread_mutex_unlock(&data->phi->dead_m);
 	return(0);
 }
+*/
