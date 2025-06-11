@@ -6,7 +6,7 @@
 /*   By: sydubois <sydubois@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/11 14:40:59 by sydubois          #+#    #+#             */
-/*   Updated: 2025/06/11 14:42:34 by sydubois         ###   ########.fr       */
+/*   Updated: 2025/06/11 17:29:51 by sydubois         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ int	check_eat_enaf(t_data *data)
 	n = 0;
 	while (i < data->phi->nb_p)
 	{
-		if (data_tmp->count_eat >= data->phi->nb_e + 1)
+		if (data_tmp->count_eat >= data->phi->nb_e)
 			n++;
 		i++;
 		data_tmp = data->next;

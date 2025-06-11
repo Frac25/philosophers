@@ -1,26 +1,9 @@
-nb_p = 5, td = 600 te = 200 ts= 200 nb_e = 10
-print 1749646254668 P1 has taken a fork
-print 1749646254668 P1 has taken a fork
-print 1749646254668 P1 is eating
-print 1749646254670 P3 has taken a fork
-print 1749646254670 P3 has taken a fork
-print 1749646254670 P3 is eating
-print 1749646254670 P4 has taken a fork
-print 1749646254868 P1 is sleeping
-print 1749646254868 P5 has taken a fork
-print 1749646254870 P3 is sleeping
-print 1749646254870 P4 has taken a fork
-print 1749646254870 P4 is eating
-print 1749646254870 P2 has taken a fork
-print 1749646254870 P2 has taken a fork
-print 1749646254870 P2 is eating
-print 1749646255068 P1 is thinking
-print 1749646255070 P3 is thinking
-print 1749646255070 P4 is sleeping
-print 1749646255070 P2 is sleeping
-print 1749646255070 P5 has taken a fork
-print 1749646255070 P5 is eating
-print 1749646255072 P3 has taken a fork
-print 1749646255072 P3 has taken a fork
-print 1749646255072 P3 is eating
-print 1749646255268 P1 died
+nb_p=2 td=210 te=200 ts=200 nb_e=100
+1749655943045 P1 has taken a fork
+1749655943045 P1 has taken a fork
+1749655943045 P1 is eating
+1749655943245 P1 is sleeping
+1749655943245 P2 has taken a fork
+1749655943245 P2 has taken a fork
+1749655943245 P2 is eating
+1749655943255 P1 died

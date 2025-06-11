@@ -6,7 +6,7 @@
 /*   By: sydubois <sydubois@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/11 14:40:22 by sydubois          #+#    #+#             */
-/*   Updated: 2025/06/11 14:49:09 by sydubois         ###   ########.fr       */
+/*   Updated: 2025/06/11 17:33:35 by sydubois         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,12 @@ int	p_eat(t_data *data)
 {
 	f_lock(data);
 	pthread_mutex_lock(&data->phi->dead_m);
+	if (data->phi->dead == 1)
+	{
+		f_unlock(data);
+		pthread_mutex_unlock(&data->phi->dead_m);
+		return (0);
+	}
 	data->start_eat = tv();
 	data->count_eat++;
 	pthread_mutex_unlock(&data->phi->dead_m);

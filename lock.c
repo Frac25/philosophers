@@ -6,7 +6,7 @@
 /*   By: sydubois <sydubois@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/11 14:53:38 by sydubois          #+#    #+#             */
-/*   Updated: 2025/06/11 14:54:09 by sydubois         ###   ########.fr       */
+/*   Updated: 2025/06/11 17:08:23 by sydubois         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,8 @@
 int	f_unlock(t_data *data)
 {
 	pthread_mutex_unlock(&data->fork_m);
-	pthread_mutex_unlock(&data->next->fork_m);
+	if (data->phi->nb_p != 1)
+		pthread_mutex_unlock(&data->next->fork_m);
 	return (0);
 }
 

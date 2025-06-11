@@ -1,10 +1,11 @@
 NAME = philo
 
-PROG =	philo\
-		act\
+PROG =	act\
+		close\
 		die\
-		lock\
 		lib1\
+		lock\
+		philo\
 
 OBJ_DIR = obj
 
