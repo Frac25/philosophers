@@ -8,6 +8,9 @@
 
 #include<pthread.h>
 #include<sys/time.h>
+#include"ft_dprintf.h"
+
+extern int g_sleep;
 
 typedef struct s_philo
 {

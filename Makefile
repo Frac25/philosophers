@@ -4,6 +4,8 @@ PROG =	philo\
 		act\
 		lock\
 		lib1\
+		ft_dprintf\
+		ft_dprintnb\
 
 OBJ_DIR = obj
 

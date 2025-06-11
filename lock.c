@@ -17,7 +17,7 @@ int	f_lock(t_data *data)
 	if(data->phi->nb_p == 1)
 	{
 		pthread_mutex_lock(&data->fork_m);
-		printf_m(data, "has taken a fork");
+		printf_m(data, "cas nb_p = 1 -> has taken a fork");
 		usleep(( data->phi->t_d + 10) * 1000);
 	}
 	else if(data->id > data->next->id)

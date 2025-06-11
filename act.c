@@ -39,7 +39,7 @@ void	*p_die(void *arg)
 	pthread_mutex_lock(&data->phi->look_m);
 	pthread_mutex_unlock(&data->phi->look_m);
 	while(tv() < data->phi->start_time)
-	usleep(100);
+	usleep(g_sleep);
 
 	while (1)
 	{
@@ -78,7 +78,7 @@ void	*p_die(void *arg)
 		}
 		pthread_mutex_unlock(&data->phi->dead_m);
 
-		usleep(100);
+		usleep(g_sleep);
 	}
 	return (NULL);
 }
