@@ -1,9 +1,246 @@
-nb_p=2 td=210 te=200 ts=200 nb_e=100
-1749655943045 P1 has taken a fork
-1749655943045 P1 has taken a fork
-1749655943045 P1 is eating
-1749655943245 P1 is sleeping
-1749655943245 P2 has taken a fork
-1749655943245 P2 has taken a fork
-1749655943245 P2 is eating
-1749655943255 P1 died
+nb_p=5 td=800 te=200 ts=200 nb_e=10
+1749661994393 P1 has taken a fork
+1749661994393 P1 has taken a fork
+1749661994393 P1 is eating
+1749661994395 P3 has taken a fork
+1749661994395 P3 has taken a fork
+1749661994395 P3 is eating
+1749661994395 P4 has taken a fork
+1749661994593 P1 is sleeping
+1749661994593 P5 has taken a fork
+1749661994595 P3 is sleeping
+1749661994595 P4 has taken a fork
+1749661994595 P2 has taken a fork
+1749661994595 P2 has taken a fork
+1749661994595 P2 is eating
+1749661994595 P4 is eating
+1749661994793 P1 is thinking
+1749661994795 P3 is thinking
+1749661994795 P2 is sleeping
+1749661994795 P4 is sleeping
+1749661994795 P5 has taken a fork
+1749661994795 P5 is eating
+1749661994797 P3 has taken a fork
+1749661994797 P3 has taken a fork
+1749661994797 P3 is eating
+1749661994995 P2 is thinking
+1749661994995 P4 is thinking
+1749661994995 P5 is sleeping
+1749661994995 P1 has taken a fork
+1749661994995 P1 has taken a fork
+1749661994995 P1 is eating
+1749661994997 P3 is sleeping
+1749661994997 P2 has taken a fork
+1749661994997 P4 has taken a fork
+1749661994997 P4 has taken a fork
+1749661994997 P4 is eating
+1749661995195 P5 is thinking
+1749661995195 P1 is sleeping
+1749661995195 P2 has taken a fork
+1749661995195 P2 is eating
+1749661995197 P3 is thinking
+1749661995197 P5 has taken a fork
+1749661995197 P4 is sleeping
+1749661995197 P5 has taken a fork
+1749661995197 P5 is eating
+1749661995199 P3 has taken a fork
+1749661995395 P1 is thinking
+1749661995395 P2 is sleeping
+1749661995395 P3 has taken a fork
+1749661995395 P3 is eating
+1749661995397 P4 is thinking
+1749661995397 P5 is sleeping
+1749661995397 P1 has taken a fork
+1749661995397 P1 has taken a fork
+1749661995397 P1 is eating
+1749661995399 P4 has taken a fork
+1749661995595 P2 is thinking
+1749661995595 P3 is sleeping
+1749661995595 P4 has taken a fork
+1749661995596 P4 is eating
+1749661995597 P5 is thinking
+1749661995597 P1 is sleeping
+1749661995598 P2 has taken a fork
+1749661995598 P2 has taken a fork
+1749661995598 P2 is eating
+1749661995600 P5 has taken a fork
+1749661995796 P3 is thinking
+1749661995796 P4 is sleeping
+1749661995796 P5 has taken a fork
+1749661995796 P5 is eating
+1749661995798 P1 is thinking
+1749661995798 P2 is sleeping
+1749661995798 P3 has taken a fork
+1749661995798 P3 has taken a fork
+1749661995798 P3 is eating
+1749661995996 P4 is thinking
+1749661995996 P5 is sleeping
+1749661995996 P1 has taken a fork
+1749661995996 P1 has taken a fork
+1749661995996 P1 is eating
+1749661995998 P2 is thinking
+1749661995998 P3 is sleeping
+1749661995998 P4 has taken a fork
+1749661995998 P4 has taken a fork
+1749661995998 P4 is eating
+1749661996000 P2 has taken a fork
+1749661996196 P5 is thinking
+1749661996196 P1 is sleeping
+1749661996196 P2 has taken a fork
+1749661996196 P2 is eating
+1749661996198 P3 is thinking
+1749661996198 P4 is sleeping
+1749661996198 P5 has taken a fork
+1749661996198 P5 has taken a fork
+1749661996198 P5 is eating
+1749661996200 P3 has taken a fork
+1749661996396 P1 is thinking
+1749661996396 P2 is sleeping
+1749661996396 P3 has taken a fork
+1749661996396 P3 is eating
+1749661996398 P4 is thinking
+1749661996398 P5 is sleeping
+1749661996398 P1 has taken a fork
+1749661996398 P1 has taken a fork
+1749661996398 P1 is eating
+1749661996400 P4 has taken a fork
+1749661996596 P2 is thinking
+1749661996596 P3 is sleeping
+1749661996596 P4 has taken a fork
+1749661996596 P4 is eating
+1749661996598 P5 is thinking
+1749661996598 P1 is sleeping
+1749661996598 P2 has taken a fork
+1749661996598 P2 has taken a fork
+1749661996598 P2 is eating
+1749661996600 P5 has taken a fork
+1749661996796 P3 is thinking
+1749661996796 P4 is sleeping
+1749661996796 P5 has taken a fork
+1749661996796 P5 is eating
+1749661996798 P1 is thinking
+1749661996798 P2 is sleeping
+1749661996798 P3 has taken a fork
+1749661996798 P3 has taken a fork
+1749661996798 P3 is eating
+1749661996996 P4 is thinking
+1749661996996 P5 is sleeping
+1749661996996 P1 has taken a fork
+1749661996996 P1 has taken a fork
+1749661996996 P1 is eating
+1749661996998 P2 is thinking
+1749661996998 P3 is sleeping
+1749661996998 P4 has taken a fork
+1749661996998 P4 has taken a fork
+1749661996998 P4 is eating
+1749661997000 P2 has taken a fork
+1749661997197 P5 is thinking
+1749661997197 P1 is sleeping
+1749661997197 P2 has taken a fork
+1749661997197 P2 is eating
+1749661997198 P3 is thinking
+1749661997199 P4 is sleeping
+1749661997199 P5 has taken a fork
+1749661997199 P5 has taken a fork
+1749661997199 P5 is eating
+1749661997201 P3 has taken a fork
+1749661997397 P1 is thinking
+1749661997397 P2 is sleeping
+1749661997397 P3 has taken a fork
+1749661997397 P3 is eating
+1749661997399 P4 is thinking
+1749661997399 P5 is sleeping
+1749661997399 P1 has taken a fork
+1749661997399 P1 has taken a fork
+1749661997399 P1 is eating
+1749661997401 P4 has taken a fork
+1749661997597 P2 is thinking
+1749661997597 P3 is sleeping
+1749661997597 P4 has taken a fork
+1749661997597 P4 is eating
+1749661997599 P5 is thinking
+1749661997599 P1 is sleeping
+1749661997599 P2 has taken a fork
+1749661997599 P2 has taken a fork
+1749661997599 P2 is eating
+1749661997601 P5 has taken a fork
+1749661997797 P3 is thinking
+1749661997797 P4 is sleeping
+1749661997797 P5 has taken a fork
+1749661997797 P5 is eating
+1749661997799 P1 is thinking
+1749661997799 P2 is sleeping
+1749661997799 P3 has taken a fork
+1749661997799 P3 has taken a fork
+1749661997799 P3 is eating
+1749661997997 P4 is thinking
+1749661997997 P5 is sleeping
+1749661997997 P1 has taken a fork
+1749661997997 P1 has taken a fork
+1749661997997 P1 is eating
+1749661997999 P2 is thinking
+1749661997999 P3 is sleeping
+1749661997999 P4 has taken a fork
+1749661997999 P4 has taken a fork
+1749661997999 P4 is eating
+1749661998001 P2 has taken a fork
+1749661998197 P5 is thinking
+1749661998197 P1 is sleeping
+1749661998197 P2 has taken a fork
+1749661998197 P2 is eating
+1749661998199 P3 is thinking
+1749661998199 P4 is sleeping
+1749661998199 P5 has taken a fork
+1749661998199 P5 has taken a fork
+1749661998199 P5 is eating
+1749661998201 P3 has taken a fork
+1749661998397 P1 is thinking
+1749661998397 P2 is sleeping
+1749661998397 P3 has taken a fork
+1749661998397 P3 is eating
+1749661998399 P4 is thinking
+1749661998399 P5 is sleeping
+1749661998399 P1 has taken a fork
+1749661998400 P1 has taken a fork
+1749661998400 P1 is eating
+1749661998402 P4 has taken a fork
+1749661998598 P2 is thinking
+1749661998598 P3 is sleeping
+1749661998598 P4 has taken a fork
+1749661998598 P4 is eating
+1749661998600 P5 is thinking
+1749661998600 P2 has taken a fork
+1749661998600 P1 is sleeping
+1749661998600 P2 has taken a fork
+1749661998600 P2 is eating
+1749661998602 P5 has taken a fork
+1749661998798 P3 is thinking
+1749661998798 P4 is sleeping
+1749661998798 P5 has taken a fork
+1749661998798 P5 is eating
+1749661998800 P1 is thinking
+1749661998800 P2 is sleeping
+1749661998800 P3 has taken a fork
+1749661998800 P3 has taken a fork
+1749661998800 P3 is eating
+1749661998998 P4 is thinking
+1749661998998 P5 is sleeping
+1749661998998 P1 has taken a fork
+1749661998998 P1 has taken a fork
+1749661998998 P1 is eating
+1749661999000 P2 is thinking
+1749661999000 P3 is sleeping
+1749661999000 P4 has taken a fork
+1749661999000 P4 has taken a fork
+1749661999000 P4 is eating
+1749661999002 P2 has taken a fork
+1749661999198 P5 is thinking
+1749661999198 P1 is sleeping
+1749661999198 P2 has taken a fork
+1749661999198 P2 is eating
+1749661999200 P3 is thinking
+1749661999200 P5 has taken a fork
+1749661999200 P5 has taken a fork
+1749661999200 P5 is eating
+1749661999200 P4 is sleeping
+1749661999200 P1 everybody has eaten enaf

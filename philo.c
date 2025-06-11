@@ -6,7 +6,7 @@
 /*   By: sydubois <sydubois@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/04 15:00:11 by sydubois          #+#    #+#             */
-/*   Updated: 2025/06/11 16:56:03 by sydubois         ###   ########.fr       */
+/*   Updated: 2025/06/11 19:09:49 by sydubois         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	init_philo(t_philo *phi)
 	phi->t_d = 410;
 	phi->t_e = 200;
 	phi->t_s = 200;
-	phi->nb_e = 10;
+	phi->nb_e = 0;
 	phi->dead = 0;
 	phi->start_time = tv() + 500;
 	pthread_mutex_init(&phi->dead_m, NULL);

@@ -6,7 +6,7 @@
 /*   By: sydubois <sydubois@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/11 14:40:59 by sydubois          #+#    #+#             */
-/*   Updated: 2025/06/11 17:29:51 by sydubois         ###   ########.fr       */
+/*   Updated: 2025/06/11 19:11:35 by sydubois         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,8 +74,11 @@ void	*p_die(void *arg)
 		pthread_mutex_lock(&data->phi->dead_m);
 		if (check_die(data) == -1)
 			return (NULL);
-		if (check_eat_enaf(data) == -1)
-			return (NULL);
+		if (data->phi->nb_e != 0)
+		{
+			if (check_eat_enaf(data) == -1)
+				return (NULL);
+		}
 		pthread_mutex_unlock(&data->phi->dead_m);
 		usleep(100);
 	}

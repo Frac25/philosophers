@@ -16,7 +16,7 @@ OBJ = $(addprefix $(OBJ_DIR)/, $(addsuffix .o, $(PROG)))
 CC = cc
 
 #CFLAGS =  -Wall -Wextra -Werror
-CFLAGS =  -Wall -Wextra -fsanitize=thread -g
+CFLAGS =  -Wall -Wextra -Werror -fsanitize=thread -g
 #CFLAGS =  -Wall -Wextra
 
 all:			$(OBJ_DIR) $(NAME)
